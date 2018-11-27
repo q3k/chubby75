@@ -1,4 +1,4 @@
-RV901T LED "Receive Card"
+RV901T LED "Receiver Card"
 =========================
 
 <img src="doc/front.jpg" />
