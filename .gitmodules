@@ -1,0 +1,9 @@
+[submodule "third_party/litex"]
+	path = third_party/litex
+	url = https://github.com/enjoy-digital/litex.git
+[submodule "third_party/migen"]
+	path = third_party/migen
+	url = https://github.com/m-labs/migen.git
+[submodule "third_party/liteeth"]
+	path = third_party/liteeth
+	url = https://github.com/enjoy-digital/liteeth.git
