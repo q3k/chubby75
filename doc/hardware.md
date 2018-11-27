@@ -4,11 +4,11 @@ RV901T Hardware
 Components
 ----------
 
- - U1: *FPGA* Spartan 6, XC6SLX16, FTBGA256, speed grade 2C
- - U2: *Flash* Winbond 25Q32JV, SPI, 32Mb.
- - U100: *SDRAM* M12L64322A-5T, 512K x 32b x 4 banks (64Mb), 200MHz
- - U200: *GigE PHY* Broadcom B50512D, referred to as 'phy0' / 'top'
- - U201: *GigE PHY* Broadcom B50512D, referred to as 'phy1' / 'bottom'
+ - U1: **FPGA** Spartan 6, XC6SLX16, FTBGA256, speed grade 2C
+ - U2: **Flash** Winbond 25Q32JV, SPI, 32Mb.
+ - U100: **SDRAM** M12L64322A-5T, 512K x 32b x 4 banks (64Mb), 200MHz
+ - U200: **GigE PHY** Broadcom B50512D, referred to as 'phy0' / 'top'
+ - U201: **GigE PHY** Broadcom B50512D, referred to as 'phy1' / 'bottom'
  - U600-U607: 74HC245 octal buffer, 5V, direction set by FPGA
  - U608-U610: 74HC245 octal buffer, 5V, direction hardwired to output
 
