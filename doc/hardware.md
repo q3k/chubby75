@@ -51,11 +51,31 @@ This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO ar
 | TXD[3]   | F3       |
 | TX\_EN   | E4       |
 | RXC      | F1       |
-| RXD[0]   | H1       |
-| RXD[1]   | F2       |
-| RXD[2]   | F4       |
-| RXD[3]   | G1       |
-| RXD\_DV  | G3       |
+| RXD[0]   | F2       |
+| RXD[1]   | F4       |
+| RXD[2]   | G1       |
+| RXD[3]   | G3       |
+| RXD\_DV  | H1       |
+
+PHY1, U201
+----------
+
+This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
+
+| U200 Pin | FPGA Pin | Remarks                                        |
+|----------|----------|------------------------------------------------|
+| GTXCLK   | J1       |                                                |
+| TXD[0]   | ??       | Not driven by FPGA..?                          |
+| TXD[1]   | K1       |                                                |
+| TXD[2]   | K2       |                                                |
+| TXD[3]   | H3       |                                                |
+| TX\_EN   | E4       |                                                |
+| RXC      | ??       | Can't boundary scan, have to physically trace. |
+| RXD[0]   | L1       |                                                |
+| RXD[1]   | L3       |                                                |
+| RXD[2]   | M1       |                                                |
+| RXD[3]   | M2       |                                                |
+| RXD\_DV  | M3       |                                                |
 
 
 Buffers
@@ -110,7 +130,7 @@ is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left
 | 23      | M12      | U601, channel 7                           |
 | 24      | N11      | U601, channel 6                           |
 | 25      | M11      | U601, channel 5                           |
-| 26      | ???      | U601, channel 4                           |
+| 26      | M10      | U601, channel 4                           |
 | 27      | L10      | U601, channel 3                           |
 | 28      | N9       | U601, channel 2                           |
 | 29      | P11      | U601, channel 1                           |
@@ -122,8 +142,8 @@ is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left
 | 35      | T7       | U605, channel 3                           |
 | 36      | T6       | U605, channel 2                           |
 | 37      | R5       | U605, channel 1                           |
-| 38      | ???      | U605, channel 0                           |
-| 39      | ???      | U608, channel 7                           |
+| 38      | T5       | U605, channel 0                           |
+| 39      | A12      | U608, channel 7                           |
 | 40      | B12      | U608, channel 6                           |
 | 41      | A13      | U608, channel 5                           |
 | 42      | C13      | U608, channel 4                           |

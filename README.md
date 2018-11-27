@@ -20,8 +20,9 @@ Status
  - Hardware RE:
    - [X] Clocking
    - [X] LED and Button
-   - [X] PHY0 and PHY1
-   - [X] J600 - **few pins still missing**
+   - [X] PHY0
+   - [ ] PHY1 - *partially*
+   - [X] J600
    - [ ] J601
    - [ ] JP5 - SPI flash connector?
    - [ ] JP2
