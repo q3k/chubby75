@@ -38,7 +38,7 @@ Status
 Acknowledgments
 ---------------
 
-Thanks to Niklas Fauth for donating two boards. Thanks to carrotIndustries for assisting with the preliminary RE process at Glühweinprogrammiernacht 2018.
+Thanks to Niklas Fauth for donating two boards and partially tracing out the PHYs. Thanks to carrotIndustries for assisting with the preliminary RE process at Glühweinprogrammiernacht 2018.
 
 License
 -------
