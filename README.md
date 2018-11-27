@@ -22,6 +22,13 @@ Status
    - [ ] JP5 - SPI flash connector?
    - [ ] JP2
    - [ ] U100 - SDRAM
+ - Migen integration:
+   - [ ] Platform Defintion - *in progress*
+ - LiteX integration
+   - [ ] Sample project with PicoRV32
+ - LiteEth integration:
+   - [ ] Spartan 6 RGMI PHY interface - *in progress*
+   - [ ] Sample project
 
 Acknowledgments
 ---------------
