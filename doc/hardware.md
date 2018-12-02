@@ -65,12 +65,12 @@ This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO ar
 | U200 Pin | FPGA Pin | Remarks                                        |
 |----------|----------|------------------------------------------------|
 | GTXCLK   | J1       |                                                |
-| TXD[0]   | ??       | Not driven by FPGA..?                          |
+| TXD[0]   | I3       | Not driven by FPGA..?                          |
 | TXD[1]   | K1       |                                                |
 | TXD[2]   | K2       |                                                |
 | TXD[3]   | H3       |                                                |
 | TX\_EN   | E4       |                                                |
-| RXC      | ??       | Can't boundary scan, have to physically trace. |
+| RXC      | J3       | Can't boundary scan, have to physically trace. |
 | RXD[0]   | L1       |                                                |
 | RXD[1]   | L3       |                                                |
 | RXD[2]   | M1       |                                                |
