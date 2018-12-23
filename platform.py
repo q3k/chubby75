@@ -38,6 +38,24 @@ _io = [
         Subsignal("tx_data", Pins("I3 K1 K2 H3")),
         IOStandard("LVCMOS33")
     ),
+
+    # sdram
+    ("sdram_clock", 0, Pins("K11"), IOStandard("LVCMOS33"), Misc("SLEW=FAST")),
+    ("sdram_clock", 1, Pins("K12"), IOStandard("LVCMOS33"), Misc("SLEW=FAST")),
+    ("sdram", 0,
+        Subsignal("a", Pins("L16 M14 M16 K14 J12 J13 J11 H13 H11 G12")),
+        Subsignal("dq", Pins(
+            "C15 C16 D14 E15 E16 F14 F16 G14",
+            "G11 E12 H14 G16 F15 D16 B16 B15",
+            "N16 P16 P15 R15 R16 R14 T14 R12",
+            "T12 T13 T15 M13 N14 M15 L12 L13")),
+        Subsignal("we_n", Pins("H16")),
+        Subsignal("ras_n", Pins("J14")),
+        Subsignal("cas_n", Pins("H15")),
+        Subsignal("cs_n", Pins("J16")),
+        Subsignal("ba", Pins("K16 K15")),
+        IOStandard("LVCMOS33"), Misc("SLEW=FAST")
+    ),
 ]
 
 class Platform(XilinxPlatform):
