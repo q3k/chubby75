@@ -37,6 +37,67 @@ Clock
 
 A 25MHz clock from PHY1 is available at pin M9.
 
+SDRAM, U100
+-----------
+
+| U100 Pin | FPGA Pin |
+|----------|----------|
+| DQ0      | C15      |
+| DQ1      | C16      |
+| DQ2      | D14      |
+| DQ3      | E15      |
+| DQ4      | E16      |
+| DQ5      | F14      |
+| DQ6      | F16      |
+| DQ7      | G14      |
+| DQ8      | G11      |
+| DQ9      | E12      |
+| DQ10     | H14      |
+| DQ11     | G16      |
+| DQ12     | F15      |
+| DQ13     | D16      |
+| DQ14     | B16      |
+| DQ15     | B15      |
+| DQ16     | N16      |
+| DQ17     | P16      |
+| DQ18     | P15      |
+| DQ19     | R15      |
+| DQ20     | R16      |
+| DQ21     | R14      |
+| DQ22     | T14      |
+| DQ23     | R12      |
+| DQ24     | T12      |
+| DQ25     | T13      |
+| DQ26     | T15      |
+| DQ27     | M13      |
+| DQ28     | N14      |
+| DQ29     | M15      |
+| DQ30     | L12      |
+| DQ31     | L13      |
+| A0       | L16      |
+| A1       | M14      |
+| A2       | M16      |
+| A3       | K14      |
+| A4       | J12      |
+| A5       | J13      |
+| A6       | J11      |
+| A7       | H13      |
+| A8       | H11      |
+| A9       | G12      |
+| A10/AP   | L14      |
+| BA0      | K16      |
+| BA1      | K15      |
+| DQM0     | **GND**  |
+| DQM1     | **GND**  |
+| DQM2     | **GND**  |
+| DQM3     | **GND**  |
+| CLK      | K11/K12  |
+| CKE      | **VCC**  |
+| ~CS      | J16      |
+| ~RAS     | J14      |
+| ~CAS     | H15      |
+| ~WE      | H16      |
+
 PHY0, U200
 ----------
 
