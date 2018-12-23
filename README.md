@@ -26,19 +26,27 @@ Status
    - [ ] J601
    - [ ] JP5 - SPI flash connector?
    - [ ] JP2
-   - [ ] U100 - SDRAM
+   - [X] U100 - SDRAM
  - Migen integration:
-   - [ ] Platform Defintion - *in progress*
+   - [X] Platform Defintion
  - LiteX integration
    - [ ] Sample project with PicoRV32
  - LiteEth integration:
-   - [ ] Spartan 6 RGMI PHY interface - *in progress*
+   - [X] Spartan 6 RGMI PHY interface
    - [ ] Sample project
 
 Acknowledgments
 ---------------
+    
+Thanks to Niklas Fauth and Jan Henrik for donating two boards and partially tracing out the PHYs, and delayering the PCB.
 
-Thanks to Niklas Fauth for donating two boards and partially tracing out the PHYs. Thanks to carrotIndustries for assisting with the preliminary RE process at Glühweinprogrammiernacht 2018.
+Thanks to carrotIndustries for assisting with the preliminary RE process at Glühweinprogrammiernacht 2018.
+
+Thanks to enjoy-digital for reverse engineering the RGMII interface.
+
+Thanks to jeanthom for reverse engineering the SDRAM interface.
+
+Thanks for informatic for reverse engineering the HUB75B hat.
 
 License
 -------
