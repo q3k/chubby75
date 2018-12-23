@@ -12,6 +12,13 @@ _io = [
     # button
     ("user_btn", 0, Pins("P4"), IOStandard("LVCMOS33")),
 
+    # serial
+    ("serial", 0,
+        Subsignal("tx", Pins("X")), # FIXME
+        Subsignal("rx", Pins("X")), # FIXME
+        IOStandard("LVCMOS33")
+    ),
+
     # ethernet
     ("eth_clocks", 0,
         Subsignal("tx", Pins("D1")),
