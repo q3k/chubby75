@@ -14,6 +14,7 @@ from litedram.modules import _TechnologyTimings
 from litedram.modules import _SpeedgradeTimings
 from litedram.modules import SDRAMModule
 from litedram.phy import GENSDRPHY
+from litedram.core.controller import ControllerSettings
 
 import platform
 
@@ -90,9 +91,9 @@ class M12L64322A(SDRAMModule):
 
 class SDRAMTest(SoCSDRAM):
     def __init__(self, platform):
-        sys_clk_freq = int(80e6)
+        sys_clk_freq = int(75e6)
         SoCSDRAM.__init__(self, platform, clk_freq=sys_clk_freq,
-            cpu_type="picorv32",
+            cpu_type="lm32",
             integrated_rom_size=0x8000)
 
         self.submodules.crg = _CRG(platform, sys_clk_freq)
@@ -102,7 +103,14 @@ class SDRAMTest(SoCSDRAM):
             sdram_module = M12L64322A(sys_clk_freq, "1:1")
             self.register_sdram(self.sdrphy,
                                 sdram_module.geom_settings,
-                                sdram_module.timing_settings)
+                                sdram_module.timing_settings,
+                                controller_settings=ControllerSettings(
+                                    with_refresh=False))
+
+        # led blink
+        led_counter = Signal(32)
+        self.sync += led_counter.eq(led_counter + 1)
+        self.comb += platform.request("user_led").eq(led_counter[26])
 
 
 def main():
