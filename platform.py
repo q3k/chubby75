@@ -14,8 +14,8 @@ _io = [
 
     # serial
     ("serial", 0,
-        Subsignal("tx", Pins("X")), # FIXME
-        Subsignal("rx", Pins("X")), # FIXME
+        Subsignal("tx", Pins("H5")),
+        Subsignal("rx", Pins("G6")),
         IOStandard("LVCMOS33")
     ),
 
