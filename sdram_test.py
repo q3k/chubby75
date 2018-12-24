@@ -36,7 +36,7 @@ class _CRG(Module):
         f = Fraction(int(sys_clk_freq), int(f0))
         n, m = f.denominator, f.numerator
         assert f0/n*m == sys_clk_freq
-        p = 4
+        p = 8
         pll_lckd = Signal()
         pll_fb = Signal()
         pll_sys = Signal()
