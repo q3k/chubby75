@@ -70,12 +70,11 @@ class _CRG(Module):
         platform.add_period_constraint(self.cd_sys_ps.clk, period_ns(sys_clk_freq))
 
         # sdram_clock
-        for i in range(2):
-            self.specials += Instance("ODDR2",
-                p_DDR_ALIGNMENT="NONE", p_INIT=0, p_SRTYPE="SYNC",
-                i_D0=0, i_D1=1, i_S=0, i_R=0, i_CE=1,
-                i_C0=self.cd_sys.clk, i_C1=~self.cd_sys.clk,
-                o_Q=platform.request("sdram_clock", i))
+        self.specials += Instance("ODDR2",
+            p_DDR_ALIGNMENT="NONE", p_INIT=0, p_SRTYPE="SYNC",
+            i_D0=0, i_D1=1, i_S=0, i_R=0, i_CE=1,
+            i_C0=self.cd_sys.clk, i_C1=~self.cd_sys.clk,
+            o_Q=platform.request("sdram_clock", 0))
 
 
 class M12L64322A(SDRAMModule):
@@ -85,8 +84,8 @@ class M12L64322A(SDRAMModule):
     nrows  = 2048
     ncols  = 256
     # timings
-    technology_timings = _TechnologyTimings(tREFI=64e6/8192, tWTR=(2, None), tCCD=(1, None), tRRD=None)
-    speedgrade_timings = {"default": _SpeedgradeTimings(tRP=15, tRCD=15, tWR=15, tRFC=55, tFAW=None, tRAS=None)}
+    technology_timings = _TechnologyTimings(tREFI=64e6/4096, tWTR=(2, None), tCCD=(1, None), tRRD=(None, 10))
+    speedgrade_timings = {"default": _SpeedgradeTimings(tRP=15, tRCD=15, tWR=15, tRFC=55, tFAW=None, tRAS=40)}
 
 
 class SDRAMTest(SoCSDRAM):
