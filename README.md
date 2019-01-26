@@ -28,12 +28,11 @@ Status
    - [ ] JP2
    - [X] U100 - SDRAM
  - Migen integration:
-   - [X] Platform Defintion
+   - [X] Platform Defintion (`platform.py`)
  - LiteX integration
-   - [ ] Sample project with PicoRV32
+   - [X] Sample project (`sdram_test.py`)
  - LiteEth integration:
-   - [X] Spartan 6 RGMI PHY interface
-   - [ ] Sample project
+   - [X] Sample project (`rgmii_test.py`)
 
 Acknowledgments
 ---------------
@@ -42,7 +41,7 @@ Thanks to Niklas Fauth and Jan Henrik for donating two boards and partially trac
 
 Thanks to carrotIndustries for assisting with the preliminary RE process at Glühweinprogrammiernacht 2018.
 
-Thanks to enjoy-digital for reverse engineering the RGMII interface.
+Thanks to enjoy-digital for reverse engineering the RGMII interface, implementing an S6 RGMII PHY interface, and the sample target files.
 
 Thanks to jeanthom for reverse engineering the SDRAM interface.
 
