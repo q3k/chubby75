@@ -165,9 +165,9 @@ All I/O Buffers are 5V. Buffers U600 to U607 have a direction pin at F13.
 LED, Button
 -----------
 
-There is a general purpose, FPGA controlled LED at F7, active low.
+There is a general purpose, FPGA controlled LED at F7, active low (FPGA pin should be set to open drain).
 
-Additionally, there is a button (S1). It's not exactly clear if it's (possible to read its state)[https://github.com/q3k/chubby75/issues/8].
+Additionally, there is a button (S1). When F7 is an input, pressing the button will read low, otherwise it will read high. Pressing the button wil [also always illuminate the LED](https://github.com/q3k/chubby75/issues/8).
 
 Connector J600
 --------------
