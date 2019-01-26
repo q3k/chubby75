@@ -14,6 +14,8 @@ Hardware
 
 There is [hardware documention](doc/hardware.md) available, which includes WIP information about mapping from the FPGA balls / IO into various peripherals on board and connectors.
 
+You can buy these boards from eBay, Aliexpress, Taobao. As of today (2019/01/26), these boards are around €18 (including S&H) on Aliexpress.
+
 Status
 ------
 
