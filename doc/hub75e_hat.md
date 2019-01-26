@@ -38,16 +38,16 @@ HUB75E connectors
 | 2 | J601.44    | J3.CLK          |
 | 3 | J601.44    | J4.CLK          |
 | 4 | J601.44    | J5.CLK          |
-| 5 | J601.43    | J1.LAT, J2.LAT  |
-| 6 | J601.43    | J3.LAT, J4.LAT  |
-| 7 | J601.43    | J5.LAT, J6.LAT  |
+| 5 | J601.43    | J1.STB, J2.STB  |
+| 6 | J601.43    | J3.STB, J4.STB  |
+| 7 | J601.43    | J5.STB, J6.STB  |
 
 | Buffer U2                        |
 |----------------------------------|
 | Ch. | A-side   | B-side          |
 |---|------------|-----------------|
-| 0 | J601.43    | J7.LAT, J8.LAT  |
-| 1 | J601.43    | J9.LAT, J10.LAT |
+| 0 | J601.43    | J7.STB, J8.STB  |
+| 1 | J601.43    | J9.STB, J10.STB |
 | 2 | J602.42    | J1.A, J2.A      |
 | 3 | J602.42    | J3.A, J4.A      |
 | 4 | J602.42    | J5.A, J6.A      |
@@ -115,7 +115,7 @@ Final pinout
 | Signal          | J600/J601 pin                      |
 |-----------------|------------------------------------|
 | HUB75.*.OE      | J600.45 (via U5)                   |
-| HUB75.*.LAT     | J601.43 (via U1, U2)               |
+| HUB75.*.STB     | J601.43 (via U1, U2)               |
 | HUB75.*.CLK     | J601.44 (via U1), J600.44 (via U4) |
 | HUB75.*.A       | J602.42 (via U2)                   |
 | HUB75.*.B       | J601.41 (via U2, U3)               |
