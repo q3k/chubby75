@@ -6,7 +6,7 @@ Layout/numbering
 
 The board consists of 10 connectors (marked J1-J10) and 6 74HC245TS buffers (marked U1-U6).
 
-J600/J601 connectors are numbered as per RV901T markings.
+J600/J601 connectors are numbered as per RV901T markings. J601 is the RV901T connector that mates with JP1, J600 is the RV901T connect that makes with JP2.
 
 HUB75E connectors
 ----------------
