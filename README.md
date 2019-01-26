@@ -23,8 +23,9 @@ Status
    - [X] PHY0
    - [ ] PHY1 - *partially*
    - [X] J600
-   - [ ] J601
+   - [X] J601
    - [ ] JP5 - SPI flash connector?
+   - [X] JP4
    - [ ] JP2
    - [X] U100 - SDRAM
  - Migen integration:

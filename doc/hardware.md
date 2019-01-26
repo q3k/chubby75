@@ -177,55 +177,130 @@ Located on bottom of board.
 Pin 1 labeled with arrow on top silkscreen layer. Pins are marked alternating, ie. pin 1
 is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left and pin 50 bottom-left.
 
-| ID1 Pin | FPGA Pin | Buffer                                    |
-|---------|----------|-------------------------------------------|
-| 1       | *GND*    |                                           |
-| 2       | *5V*     |                                           |
-| 3       | *GND*    |                                           |
-| 4       | ???      |                                           |
-| 5       | *GND*    |                                           |
-| 6       | ???      |                                           |
-| 7       | P4       | U600, channel 7, shared with button S1    |
-| 8       | R1       | U600, channel 6                           |
-| 9       | M4       | U600, channel 5                           |
-| 10      | L5       | U600, channel 4                           |
-| 11      | M5       | U600, channel 3                           |
-| 12      | K6       | U600, channel 2                           |
-| 13      | T4       | U600, channel 1                           |
-| 14      | P5       | U600, channel 0                           |
-| 15      | P6       | U604, channel 7                           |
-| 16      | M7       | U604, channel 6                           |
-| 17      | N6       | U604, channel 5                           |
-| 18      | M6       | U604, channel 4                           |
-| 19      | L7       | U604, channel 3                           |
-| 20      | L8       | U604, channel 2                           |
-| 21      | P7       | U604, channel 1                           |
-| 22      | N8       | U604, channel 0                           |
-| 23      | M12      | U601, channel 7                           |
-| 24      | N11      | U601, channel 6                           |
-| 25      | M11      | U601, channel 5                           |
-| 26      | M10      | U601, channel 4                           |
-| 27      | L10      | U601, channel 3                           |
-| 28      | N9       | U601, channel 2                           |
-| 29      | P11      | U601, channel 1                           |
-| 30      | T11      | U601, channel 0                           |
-| 31      | R9       | U605, channel 7                           |
-| 32      | T9       | U605, channel 6                           |
-| 33      | T8       | U605, channel 5                           |
-| 34      | R7       | U605, channel 4                           |
-| 35      | T7       | U605, channel 3                           |
-| 36      | T6       | U605, channel 2                           |
-| 37      | R5       | U605, channel 1                           |
-| 38      | T5       | U605, channel 0                           |
-| 39      | A12      | U608, channel 7                           |
-| 40      | B12      | U608, channel 6                           |
-| 41      | A13      | U608, channel 5                           |
-| 42      | C13      | U608, channel 4                           |
-| 43      | A14      | U608, channel 3                           |
-| 44      | B14      | U608, channel 2                           |
-| 45      | C11      | U608, channel 1                           |
-| 46      | *GND*    |                                           |
-| 47      | E13      | Not buffered, goes directly through R602? |
-| 48      | *GND*    |                                           |
-| 49      | *5V*     |                                           |
-| 50      | *GND*    |                                           |
+| J600 Pin| FPGA Pin | Buffer                                    | Notes               |
+|---------|----------|-------------------------------------------|---------------------|
+| 1       | *GND*    |                                           |                     |
+| 2       | *5V*     |                                           |                     |
+| 3       | *GND*    |                                           |                     |
+| 4       | J6       | U610, channel 2, through R603             | Shared with J601.4  |
+| 5       | *GND*    |                                           |                     |
+| 6       | A11      | U608, channel 0,                          | Shared with J600.6  |
+| 7       | P4       | U600, channel 7,                          |                     |
+| 8       | R1       | U600, channel 6                           |                     |
+| 9       | M4       | U600, channel 5                           |                     |
+| 10      | L5       | U600, channel 4                           |                     |
+| 11      | M5       | U600, channel 3                           |                     |
+| 12      | K6       | U600, channel 2                           |                     |
+| 13      | T4       | U600, channel 1                           |                     |
+| 14      | P5       | U600, channel 0                           |                     |
+| 15      | P6       | U604, channel 7                           |                     |
+| 16      | M7       | U604, channel 6                           |                     |
+| 17      | N6       | U604, channel 5                           |                     |
+| 18      | M6       | U604, channel 4                           |                     |
+| 19      | L7       | U604, channel 3                           |                     |
+| 20      | L8       | U604, channel 2                           |                     |
+| 21      | P7       | U604, channel 1                           |                     |
+| 22      | N8       | U604, channel 0                           |                     |
+| 23      | M12      | U601, channel 7                           |                     |
+| 24      | N11      | U601, channel 6                           |                     |
+| 25      | M11      | U601, channel 5                           |                     |
+| 26      | M10      | U601, channel 4                           |                     |
+| 27      | L10      | U601, channel 3                           |                     |
+| 28      | N9       | U601, channel 2                           |                     |
+| 29      | P11      | U601, channel 1                           |                     |
+| 30      | T11      | U601, channel 0                           |                     |
+| 31      | R9       | U605, channel 7                           |                     |
+| 32      | T9       | U605, channel 6                           |                     |
+| 33      | T8       | U605, channel 5                           |                     |
+| 34      | R7       | U605, channel 4                           |                     |
+| 35      | T7       | U605, channel 3                           |                     |
+| 36      | T6       | U605, channel 2                           |                     |
+| 37      | R5       | U605, channel 1                           |                     |
+| 38      | T5       | U605, channel 0                           |                     |
+| 39      | A12      | U608, channel 7                           | Shared with J600.39 | 
+| 40      | B12      | U608, channel 6                           | Shared with J600.40 |
+| 41      | A13      | U608, channel 5                           | Shared with J600.41 |
+| 42      | C13      | U608, channel 4                           | Shared with J600.42 |
+| 43      | A14      | U608, channel 3                           | Shared with J600.43 |
+| 44      | B14      | U608, channel 2                           | Shared with J600.44 |
+| 45      | C11      | U608, channel 1                           | Shared with J600.45 |
+| 46      | *GND*    |                                           |                     |
+| 47      | E13      | U610, channel 4, through R602             | Shared with J600.47 |
+| 48      | *GND*    |                                           |                     |
+| 49      | *5V*     |                                           |                     |
+| 50      | *GND*    |                                           |                     |
+
+Connector J601
+--------------
+
+Located on top of board.
+
+| J601 Pin| FPGA Pin | Buffer                                    | Notes               |
+|---------|----------|-------------------------------------------|---------------------|
+| 1       | *GND*    |                                           |                     |
+| 2       | *5V*     |                                           |                     |
+| 3       | *GND*    |                                           |                     |
+| 4       | J6       | U610, channel 3                           | Shared with J600.4  |
+| 5       | *GND*    |                                           |                     |
+| 6       | A11      | U609, channel 0                           | Shared with J600.6  |
+| 7       | D3       | U603, channel 7                           |                     |
+| 8       | C3       | U603, channel 6                           |                     |
+| 9       | B3       | U603, channel 5                           |                     |
+| 10      | D5       | U603, channel 4                           |                     |
+| 11      | A4       | U603, channel 3                           |                     |
+| 12      | B2       | U603, channel 2                           |                     |
+| 13      | A2       | U603, channel 1                           |                     |
+| 14      | A3       | U603, chnnael 0                           |                     |
+| 15      | A5       | U607, channel 7                           |                     |
+| 16      | A6       | U607, channel 6                           |                     |
+| 17      | A7       | U607, channel 5                           |                     |
+| 18      | A8       | U607, channel 4                           |                     |
+| 19      | B8       | U607, channel 3                           |                     |
+| 20      | A9       | U607, channel 2                           |                     |
+| 21      | A10      | U607, channel 1                           |                     |
+| 22      | B10      | U607, channel 0                           |                     |
+| 23      | E11      | U602, channel 7                           |                     |
+| 24      | D12      | U602, channel 6                           |                     |
+| 25      | D11      | U602, channel 5                           |                     |
+| 26      | E10      | U602, channel 4                           |                     |
+| 27      | D9       | U602, channel 3                           |                     |
+| 28      | F9       | U602, channel 2                           |                     |
+| 29      | D8       | U602, channel 1                           |                     |
+| 30      | E8       | U602, channel 0                           |                     |
+| 31      | E7       | U606, channel 7                           |                     |
+| 32      | D6       | U606, channel 6                           |                     |
+| 33      | E6       | U606, channel 5                           |                     |
+| 34      | C9       | U606, channel 4                           |                     |
+| 35      | C8       | U606, channel 3                           |                     |
+| 36      | C7       | U606, channel 2                           |                     |
+| 37      | C6       | U606, channel 1                           |                     |
+| 38      | B6       | U606, channel 0                           |                     |
+| 39      | A12      | U609, channel 7                           | Shared with J600.39 | 
+| 40      | B12      | U609, channel 6                           | Shared with J600.40 |
+| 41      | A13      | U609, channel 5                           | Shared with J600.41 |
+| 42      | C13      | U609, channel 4                           | Shared with J600.42 |
+| 43      | A14      | U609, channel 3                           | Shared with J600.43 |
+| 44      | B14      | U609, channel 2                           | Shared with J600.44 |
+| 45      | C11      | U609, channel 1                           | Shared with J600.45 |
+| 46      | *GND*    |                                           |                     |
+| 47      | E13      | U610, channel 5                           | Shared with J600.47 |
+| 48      | *GND*    |                                           |                     |
+| 49      | *5V*     |                                           |                     |
+| 50      | *GND*    |                                           |                     |
+
+Connector JP4
+-------------
+
+| Pin | Connectivity             | Notes                            |
+|-----|--------------------------|----------------------------------|
+| 1   | *GND*                    |                                  |
+| 2   | NC                       |                                  |
+| 3   | FPGA H5, Unbuffered      | Used as serial TX in Migen/Litex |
+| 4   | FPGA G5, Unbuffered      |                                  |
+| 5   | FPGA G6, Unbuffered      | Used as serial RX in Migen/Litex |
+| 6   | FPGA F5, Unbuffered      |                                  |
+| 7   | FPGA F12, U610 channel 0 |                                  |
+| 8   | FPGA F6, U610 channel 0  |                                  |
+| 9   | *5V*                     |                                  |
+| 10  | NV                       |                                  |
+
