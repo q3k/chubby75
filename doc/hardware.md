@@ -167,7 +167,7 @@ LED, Button
 
 There is a general purpose, FPGA controlled LED at F7, active low.
 
-Additionally, there is a button at P4.
+Additionally, there is a button (S1). It's not exactly clear if it's (possible to read its state)[https://github.com/q3k/chubby75/issues/8].
 
 Connector J600
 --------------
