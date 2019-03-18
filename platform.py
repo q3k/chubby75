@@ -32,16 +32,16 @@ _io = [
 
     ("eth_clocks", 1,
         Subsignal("tx", Pins("J1")),
-        Subsignal("rx", Pins("J3")),
+        Subsignal("rx", Pins("K3")),
         IOStandard("LVCMOS33")
     ),
     ("eth", 1,
         Subsignal("rx_ctl", Pins("M3")),
         Subsignal("rx_data", Pins("L1 L3 M1 M2")),
-        Subsignal("tx_ctl", Pins("E4")),
-        Subsignal("tx_data", Pins("I3 K1 K2 H3")),
+        Subsignal("tx_ctl", Pins("H2")),
+        Subsignal("tx_data", Pins("J3 K1 K2 H3")),
         IOStandard("LVCMOS33")
-    ),
+    ),    
 
     # sdram
     ("sdram_clock", 0, Pins("K11"), IOStandard("LVCMOS33"), Misc("SLEW=FAST")),
