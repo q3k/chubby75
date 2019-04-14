@@ -27,16 +27,16 @@ The board seems to have no exposed JTAG pins. However, there are marked test pad
 SPI Flash
 ---------
 
-The SPI flash holding the configuration memory (U2) seems to be accessible via JP5, but this was not yet tested. The flash I/Os are connected through 33Ω resistors.
+The SPI flash holding the configuration memory (U2) seems to be accessible via JP5, but this was not yet tested. The flash I/Os are connected through 33Ω resistors. The PROG_B signal has to be shorted to GND in order to access the SPI flash.
 
 | JP5 Pin | U2 Pin    |
 |---------|-----------|
 | 1       | CLK       |
 | 2       |           |
 | 3       | D0/IO1    |
-| 4       |           |
-| 5       |           |
-| 6       |           |
+| 4       | +5V       |
+| 5       | DONE      |
+| 6       | PROG_B    |
 | 7       | CS        |
 | 8       |           |
 | 9       | DI/IO0    |
