@@ -105,10 +105,27 @@ If all goes well, iMPACT should detect the Spartan-6 LX16 FPGA attached to the J
 
 ![](xc6slx16_detected.png)
 
+## LED Blink Test
+
+You are now ready to load a custom design in your RV910T.
+
+Let's start load a ready-made bitstream, included in this project, that simply blinks the green 
+LED once per second.
+
+* Click on the xc6slx16 FPGA icon in iMPACT. It will turn green if it wasn't already.
+* Right click on the FPGA icon and select "Assign New Configuration File"
+* Now select `./blink/ise/top.bit'
+* When asked "Do you want to attach an SPI or BPI PROM to this device?", answer "No"
+* Click again on the xc6slx16 FPGA to turn it green.
+* Select "Operations->Program" (or click the corresponding toolbar icon)
+* When asked about "Device Programming Properties", just click "Ok"
+
+If all went well, the bitstream will load into the device and your green LED will be blinking! Congratulations!
 
 ## Next Steps
 
-At this point, you have an RV901T modified for use as a 
-general-purpose FPGA development board.
-You can create designs using the pin assignments listed [here](https://github.com/q3k/chubby75/blob/master/doc/hardware.md)
-and download the compiled bitstreams to the FPGA through the JTAG port.
+Create your own designs!
+
+You can find the pin assignments of the FPGA  [here](https://github.com/q3k/chubby75/blob/master/doc/hardware.md).
+
+
