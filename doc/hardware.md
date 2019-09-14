@@ -11,11 +11,16 @@ Components
 
  - U1: **FPGA** Spartan 6, XC6SLX16, FTBGA256, speed grade 2C
  - U2: **Flash** Winbond 25Q32JV, SPI, 32Mb.
+   - [Datasheet](https://www.winbond.com/resource-files/w25q32jv%20spi%20revc%2008302016.pdf)
  - U100: **SDRAM** M12L64322A-5T, 512K x 32b x 4 banks (64Mb), 200MHz
+   - Various SDRAM vendors such as ESMT and Winbond.
+   - [ESMT Datasheet](https://www.esmt.com.tw/upload/pdf/ESMT/datasheets/M12L64322A(2S).pdf)
+   - [Winbond Datasheet](https://www.datasheets360.com/pdf/-6219802484225316851)
  - U200: **GigE PHY** Broadcom B50512D, referred to as 'phy0' / 'top'
  - U201: **GigE PHY** Broadcom B50512D, referred to as 'phy1' / 'bottom'
- - U600-U607: 74HC245 octal buffer, 5V, direction set by FPGA
- - U608-U610: 74HC245 octal buffer, 5V, direction hardwired to output
+ - U600-U607: 74HC245 octal bus transceiver, 5V, direction set by FPGA
+    - [Datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT245.pdf)
+ - U608-U610: 74HC245 octal bus transceiver, 5V, direction hardwired to output
 
 Definitions
 -----------
