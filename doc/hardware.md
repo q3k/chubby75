@@ -4,7 +4,7 @@ RV901T Hardware
 Annotated PCB
 -------------
 
-<img src="doc/front_annotated.jpg" />
+<img src="/doc/front_annotated.jpg" />
 
 Components
 ----------
