@@ -29,6 +29,14 @@ We define 'top', 'bottom', 'left', 'right' as relative to the FPGA orientation -
 top is towards the 'A' row of balls, bottom towards 'T', left towards the '1' column of balls
 and right towards '16'.
 
+Power
+-----
+
+The PCB requires a 5V power supply only. You can either use the standard 4-pin
+[disk-drive Molex connector](https://en.wikipedia.org/wiki/Molex_connector#Disk_drive) on J501, or you can use
+the 2 terminals of J500. The top terminal of J500 is 5V, the bottom is GND.
+
+
 JTAG
 ----
 
