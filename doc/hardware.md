@@ -42,6 +42,8 @@ JTAG
 
 The board seems to have no exposed JTAG pins. However, there are marked test pads / vias on the front of the board, underneat silkscreen, to the top-right of the FPGA.
 
+See [Getting Started](getting_started/getting_started.md) for detailed instructions on how to wire up the JTAG interface.
+
 SPI Flash
 ---------
 
@@ -202,7 +204,7 @@ is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left
 | 3       | *GND*    |                                           |                     |
 | 4       | J6       | U610, channel 2, through R603             | Shared with J601.4  |
 | 5       | *GND*    |                                           |                     |
-| 6       | A11      | U608, channel 0,                          | Shared with J600.6  |
+| 6       | A11      | U608, channel 0,                          | Shared with J601.6  |
 | 7       | P4       | U600, channel 7,                          |                     |
 | 8       | R1       | U600, channel 6                           |                     |
 | 9       | M4       | U600, channel 5                           |                     |
@@ -235,15 +237,15 @@ is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left
 | 36      | T6       | U605, channel 2                           |                     |
 | 37      | R5       | U605, channel 1                           |                     |
 | 38      | T5       | U605, channel 0                           |                     |
-| 39      | A12      | U608, channel 7                           | Shared with J600.39 | 
-| 40      | B12      | U608, channel 6                           | Shared with J600.40 |
-| 41      | A13      | U608, channel 5                           | Shared with J600.41 |
-| 42      | C13      | U608, channel 4                           | Shared with J600.42 |
-| 43      | A14      | U608, channel 3                           | Shared with J600.43 |
-| 44      | B14      | U608, channel 2                           | Shared with J600.44 |
-| 45      | C11      | U608, channel 1                           | Shared with J600.45 |
+| 39      | A12      | U608, channel 7                           | Shared with J601.39 |
+| 40      | B12      | U608, channel 6                           | Shared with J601.40 |
+| 41      | A13      | U608, channel 5                           | Shared with J601.41 |
+| 42      | C13      | U608, channel 4                           | Shared with J601.42 |
+| 43      | A14      | U608, channel 3                           | Shared with J601.43 |
+| 44      | B14      | U608, channel 2                           | Shared with J601.44 |
+| 45      | C11      | U608, channel 1                           | Shared with J601.45 |
 | 46      | *GND*    |                                           |                     |
-| 47      | E13      | U610, channel 4, through R602             | Shared with J600.47 |
+| 47      | E13      | U610, channel 4, through R602             | Shared with J601.47 |
 | 48      | *GND*    |                                           |                     |
 | 49      | *5V*     |                                           |                     |
 | 50      | *GND*    |                                           |                     |
