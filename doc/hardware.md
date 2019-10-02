@@ -1,16 +1,26 @@
 RV901T Hardware
 ===============
 
+Annotated PCB
+-------------
+
+<img src="/doc/front_annotated.jpg" />
+
 Components
 ----------
 
  - U1: **FPGA** Spartan 6, XC6SLX16, FTBGA256, speed grade 2C
  - U2: **Flash** Winbond 25Q32JV, SPI, 32Mb.
+   - [Datasheet](https://www.winbond.com/resource-files/w25q32jv%20spi%20revc%2008302016.pdf)
  - U100: **SDRAM** M12L64322A-5T, 512K x 32b x 4 banks (64Mb), 200MHz
+   - Various SDRAM vendors such as ESMT and Winbond.
+   - [ESMT Datasheet](https://www.esmt.com.tw/upload/pdf/ESMT/datasheets/M12L64322A(2S).pdf)
+   - [Winbond Datasheet](https://www.datasheets360.com/pdf/-6219802484225316851)
  - U200: **GigE PHY** Broadcom B50512D, referred to as 'phy0' / 'top'
  - U201: **GigE PHY** Broadcom B50512D, referred to as 'phy1' / 'bottom'
- - U600-U607: 74HC245 octal buffer, 5V, direction set by FPGA
- - U608-U610: 74HC245 octal buffer, 5V, direction hardwired to output
+ - U600-U607: 74HC245 octal bus transceiver, 5V, direction set by FPGA
+    - [Datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT245.pdf)
+ - U608-U610: 74HC245 octal bus transceiver, 5V, direction hardwired to output
 
 Definitions
 -----------
@@ -19,10 +29,20 @@ We define 'top', 'bottom', 'left', 'right' as relative to the FPGA orientation -
 top is towards the 'A' row of balls, bottom towards 'T', left towards the '1' column of balls
 and right towards '16'.
 
+Power
+-----
+
+The PCB requires a 5V power supply only. You can either use the standard 4-pin
+[disk-drive Molex connector](https://en.wikipedia.org/wiki/Molex_connector#Disk_drive) on J501, or you can use
+the 2 terminals of J500. The top terminal of J500 is 5V, the bottom is GND.
+
+
 JTAG
 ----
 
 The board seems to have no exposed JTAG pins. However, there are marked test pads / vias on the front of the board, underneat silkscreen, to the top-right of the FPGA.
+
+See [Getting Started](getting_started/getting_started.md) for detailed instructions on how to wire up the JTAG interface.
 
 SPI Flash
 ---------
@@ -184,7 +204,7 @@ is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left
 | 3       | *GND*    |                                           |                     |
 | 4       | J6       | U610, channel 2, through R603             | Shared with J601.4  |
 | 5       | *GND*    |                                           |                     |
-| 6       | A11      | U608, channel 0,                          | Shared with J600.6  |
+| 6       | A11      | U608, channel 0,                          | Shared with J601.6  |
 | 7       | P4       | U600, channel 7,                          |                     |
 | 8       | R1       | U600, channel 6                           |                     |
 | 9       | M4       | U600, channel 5                           |                     |
@@ -217,15 +237,15 @@ is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left
 | 36      | T6       | U605, channel 2                           |                     |
 | 37      | R5       | U605, channel 1                           |                     |
 | 38      | T5       | U605, channel 0                           |                     |
-| 39      | A12      | U608, channel 7                           | Shared with J600.39 | 
-| 40      | B12      | U608, channel 6                           | Shared with J600.40 |
-| 41      | A13      | U608, channel 5                           | Shared with J600.41 |
-| 42      | C13      | U608, channel 4                           | Shared with J600.42 |
-| 43      | A14      | U608, channel 3                           | Shared with J600.43 |
-| 44      | B14      | U608, channel 2                           | Shared with J600.44 |
-| 45      | C11      | U608, channel 1                           | Shared with J600.45 |
+| 39      | A12      | U608, channel 7                           | Shared with J601.39 |
+| 40      | B12      | U608, channel 6                           | Shared with J601.40 |
+| 41      | A13      | U608, channel 5                           | Shared with J601.41 |
+| 42      | C13      | U608, channel 4                           | Shared with J601.42 |
+| 43      | A14      | U608, channel 3                           | Shared with J601.43 |
+| 44      | B14      | U608, channel 2                           | Shared with J601.44 |
+| 45      | C11      | U608, channel 1                           | Shared with J601.45 |
 | 46      | *GND*    |                                           |                     |
-| 47      | E13      | U610, channel 4, through R602             | Shared with J600.47 |
+| 47      | E13      | U610, channel 4, through R602             | Shared with J601.47 |
 | 48      | *GND*    |                                           |                     |
 | 49      | *5V*     |                                           |                     |
 | 50      | *GND*    |                                           |                     |

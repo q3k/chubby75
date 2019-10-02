@@ -1,13 +1,21 @@
 RV901T LED "Receiver Card"
 =========================
 
-<img src="doc/front.jpg" />
+<img src="doc/front_annotated.jpg" />
 
 This repository contains bits and pieces about the Linsn RV901T HUB75 LED driver card, also known as a "Receiver Card". Its stock function is to receive and forward framebuffer data using a proprietary protocol (from a "Sender Card") and blit out control signals to LED panels (via shields, like a HUB75 shield).
 
 As it contains a user-reprogrammable Spartan 6 FPGA (LX16, 14k 'logic cells', 9112 LUTs) and 2x GbE, it has potential to be usable as a general purpose FPGA development board, an interface card for various purposes, or a logic analyzer.
 
 **Chubby75** is a project to reverse engineer, document and provide tools based on this card.
+
+Documentation
+-------------
+
+* [Reverse engineered RV901T Hardware Documentation](doc/hardware.md)
+* [Reverse engineered HUB75B Hat Hardware Documentation](doc/hub75b_hat.md)
+* [Reverse engineered HUB7EB Hat Hardware Documentation](doc/hub75e_hat.md)
+* [Getting Started with the RV901T Board](doc/getting_started/getting_started.md)
 
 Hardware
 --------
