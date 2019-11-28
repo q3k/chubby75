@@ -1,0 +1,13 @@
+# RV901T Constraints file
+
+# VCCAUX is 2.5 Volts
+CONFIG VCCAUX = "3.3";
+
+# 25 MHz System Clock
+NET "clk25" LOC = M9 | IOSTANDARD = LVCMOS33;
+
+TIMESPEC TS_CLK = PERIOD "clk25" 25 MHz HIGH 50%;
+NET "clk25" TNM_NET = clk25;
+
+NET "user_led" LOC=F7 | IOSTANDARD = LVCMOS33;
+
