@@ -1,6 +1,7 @@
 from litex.build.generic_platform import *
 from litex.build.xilinx import XilinxPlatform
 
+# IOs ----------------------------------------------------------------------------------------------
 
 _io = [
     # clock
@@ -41,13 +42,13 @@ _io = [
         Subsignal("tx_ctl", Pins("H2")),
         Subsignal("tx_data", Pins("J3 K1 K2 H3")),
         IOStandard("LVCMOS33")
-    ),    
+    ),
 
     # sdram
     ("sdram_clock", 0, Pins("K11"), IOStandard("LVCMOS33"), Misc("SLEW=FAST")),
     ("sdram_clock", 1, Pins("K12"), IOStandard("LVCMOS33"), Misc("SLEW=FAST")),
     ("sdram", 0,
-        Subsignal("a", Pins("L16 M14 M16 K14 J12 J13 J11 H13 H11 G12")),
+        Subsignal("a", Pins("L16 M14 M16 K14 J12 J13 J11 H13 H11 G12 L14")),
         Subsignal("dq", Pins(
             "C15 C16 D14 E15 E16 F14 F16 G14",
             "G11 E12 H14 G16 F15 D16 B16 B15",
@@ -64,6 +65,8 @@ _io = [
     # Direction pin for buffers U600 to U607. 1 is input, 0 is output.
     ("bufdir", 0, Pins("F13"), IOStandard("LVCMOS33")),
 ]
+
+# Connectors ---------------------------------------------------------------------------------------
 
 _connectors = [
     # Lower connector on board. Pin 1 marked with silkscreen layer, pins then
@@ -270,9 +273,11 @@ hub75e = [
     ),
 ]
 
+# Platform -----------------------------------------------------------------------------------------
+
 class Platform(XilinxPlatform):
-    default_clk_name = "clk25"
-    default_clk_period = 40.00
+    default_clk_name   = "clk25"
+    default_clk_period = 1e9/25e6
 
     def __init__(self):
         XilinxPlatform.__init__(self, "xc6slx16-2-ftg256", _io, _connectors)
