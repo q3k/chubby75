@@ -9,6 +9,9 @@ As it contains a user-reprogrammable Spartan 6 FPGA (LX16, 14k 'logic cells', 91
 
 **Chubby75** is a project to reverse engineer, document and provide tools based on this card.
 
+The project also contains reverse engineering information for the Colorlight 5A-75B card, a variant of the RV901T that uses a Lattice ECP5-25F FPGA.
+This project is only in the beginning stages. You can find information about it [here](./5a-75b/README.md).
+
 Documentation
 -------------
 
