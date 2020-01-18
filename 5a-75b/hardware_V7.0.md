@@ -20,6 +20,18 @@ Power
 JTAG
 ----
 
+JTAG is available on a 4-pin header next to the FPGA (U33). VCC/GND are available on a 2-pin header nearby.
+
+| Pin | Function |
+|-----|----------|
+| J27 | TCK      |
+| J31 | TMS      |
+| J32 | TDI      |
+| J30 | TDO      |
+|     |          |
+| J33 | *3.3V*   |
+| J34 | *GND*    |
+
 
 SPI Flash
 ---------
@@ -31,6 +43,7 @@ Connections
 Clock
 -----
 
+P6?
 
 SDRAM, U29
 ----------
@@ -77,13 +90,86 @@ SDRAM, U29
 SDRAM, U32
 ----------
 
+| U32 Pin | FPGA Pin |
+|---------|----------|
+| DQ0     | E2       |
+| DQ1     | D3       |
+| DQ2     | A4       |
+| DQ3     | E4       |
+| DQ4     | D4       |
+| DQ5     | C4       |
+| DQ6     | E5       |
+| DQ7     | D5       |
+| DQ8     | E6       |
+| DQ9     | D6       |
+| DQ10    | D8       |
+| DQ11    | A8       |
+| DQ12    | B8       |
+| DQ13    | B10      |
+| DQ14    | B11      |
+| DQ15    | E11      |
+| A0      | A9       |
+| A1      | E10      |
+| A2      | B12      |
+| A3      | D13      |
+| A4      | C12      |
+| A5      | D11      |
+| A6      | D10      |
+| A7      | E9       |
+| A8      | D9       |
+| A9      | B7       |
+| A10/AP  | C8       |
+| BA      | A7       |
+| LDQM    | ?        |
+| UDQM    | ?        |
+| CLK     | C6       |
+| CKE     | ?        |
+| ~CS     | *GND*    |
+| ~RAS    | D7       |
+| ~CAS    | E7       |
+| ~WE     | C7       |
 
-PHY0, U
+PHY0, U3
 ----------
 
-PHY1, U
+| U3 Pin  | FPGA Pin |
+|---------|----------|
+| GTXCLK  | M2       |
+| TXD[0]  | L1       |
+| TXD[1]  | L3       |
+| TXD[2]  | P2       |
+| TXD[3]  | L4       |
+| TX\_EN  | M3       |
+| RXC     | P5       |
+| RXD[0]  | N1       |
+| RXD[1]  | M5       |
+| RXD[2]  | N5       |
+| RXD[3]  | M6       |
+| RXD\_DV | N6       |
+| MDC     | P3       |
+| MDIO    | T2       |
+| ~RESET  | P5       |
+
+PHY1, U7
 ----------
 
+| U7 Pin  | FPGA Pin |
+|---------|----------|
+| GTXCLK  | M12      |
+| TXD[0]  | T14      |
+| TXD[1]  | R12      |
+| TXD[2]  | R13      |
+| TXD[3]  | R14      |
+| TX\_EN  | R15      |
+| RXC     | M16      |
+| RXD[0]  | P13      |
+| RXD[1]  | N13      |
+| RXD[2]  | P14      |
+| RXD[3]  | M15      |
+| RXD\_DV | L15      |
+| MDC     | P3       |
+| MDIO    | T2       |
+| ~RESET  | P5       |
 
 Buffers
 -------
@@ -195,7 +281,7 @@ Connector J5
 |-------|-----------|----------|--------------------------------|---------------------|
 | 1     | R0        | M11      |                                |                     |
 | 2     | G0        | N11      |                                |                     |
-| 3     | B0        | ?        |                                |                     |
+| 3     | B0        | P12      |                                |                     |
 | 4     | *GND*     | *GND*    |                                |                     |
 | 5     | R1        | K15      |                                |                     |
 | 6     | G1        | N12      |                                |                     |
