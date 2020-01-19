@@ -43,7 +43,7 @@ Connections
 Clock
 -----
 
-P6?
+A 25MHz clock is available at FPGA pin P6, and is also connected to both PHYs.
 
 SDRAM, U29
 ----------
