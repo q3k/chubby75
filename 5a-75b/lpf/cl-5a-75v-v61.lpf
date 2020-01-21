@@ -1,0 +1,150 @@
+# Flash
+LOCATE COMP "flash_cs" SITE "R2";
+LOCATE COMP "flash_miso" SITE "V2";
+LOCATE COMP "flash_mosi" SITE "W2";
+LOCATE COMP "flash_sck" SITE "U3";
+
+# SDRAM
+LOCATE COMP "sdram_dq[0]" SITE "D15";
+LOCATE COMP "sdram_dq[1]" SITE "E14";
+LOCATE COMP "sdram_dq[2]" SITE "E13";
+LOCATE COMP "sdram_dq[3]" SITE "D12";
+LOCATE COMP "sdram_dq[4]" SITE "E12";
+LOCATE COMP "sdram_dq[5]" SITE "D11";
+LOCATE COMP "sdram_dq[6]" SITE "C10";
+LOCATE COMP "sdram_dq[7]" SITE "B17";
+LOCATE COMP "sdram_dq[8]" SITE "B8";
+LOCATE COMP "sdram_dq[9]" SITE "A8";
+LOCATE COMP "sdram_dq[10]" SITE "C7";
+LOCATE COMP "sdram_dq[11]" SITE "A7";
+LOCATE COMP "sdram_dq[12]" SITE "A6";
+LOCATE COMP "sdram_dq[13]" SITE "B6";
+LOCATE COMP "sdram_dq[14]" SITE "A5";
+LOCATE COMP "sdram_dq[15]" SITE "B5";
+LOCATE COMP "sdram_dq[16]" SITE "D5";
+LOCATE COMP "sdram_dq[17]" SITE "C5";
+LOCATE COMP "sdram_dq[18]" SITE "D6";
+LOCATE COMP "sdram_dq[19]" SITE "C6";
+LOCATE COMP "sdram_dq[20]" SITE "E7";
+LOCATE COMP "sdram_dq[21]" SITE "D7";
+LOCATE COMP "sdram_dq[22]" SITE "E8";
+LOCATE COMP "sdram_dq[23]" SITE "D9";
+LOCATE COMP "sdram_dq[24]" SITE "E9";
+LOCATE COMP "sdram_dq[25]" SITE "D9";
+LOCATE COMP "sdram_dq[26]" SITE "E11";
+LOCATE COMP "sdram_dq[27]" SITE "C11";
+LOCATE COMP "sdram_dq[28]" SITE "C12";
+LOCATE COMP "sdram_dq[29]" SITE "D13";
+LOCATE COMP "sdram_dq[30]" SITE "D14";
+LOCATE COMP "sdram_dq[31]" SITE "C15";
+
+LOCATE COMP "sdram_addr[0]" SITE "B13";
+LOCATE COMP "sdram_addr[1]" SITE "C14";
+LOCATE COMP "sdram_addr[2]" SITE "A16";
+LOCATE COMP "sdram_addr[3]" SITE "A17";
+LOCATE COMP "sdram_addr[4]" SITE "B16";
+LOCATE COMP "sdram_addr[5]" SITE "B15";
+LOCATE COMP "sdram_addr[6]" SITE "A14";
+LOCATE COMP "sdram_addr[7]" SITE "A13";
+LOCATE COMP "sdram_addr[8]" SITE "A12";
+LOCATE COMP "sdram_addr[9]" SITE "A11";
+LOCATE COMP "sdram_addr[10]" SITE "B12";
+LOCATE COMP "sdram_addr[11]" SITE "B11";
+
+LOCATE COMP "sdram_we_n" SITE "A10";
+LOCATE COMP "sdram_cas_n" SITE "A9";
+LOCATE COMP "sdram_ras_n" SITE "B10";
+LOCATE COMP "sdram_clk" SITE "B9";
+
+# Gigabit PHYs
+LOCATE COMP "phy_clk_in" SITE "P3";
+LOCATE COMP "phy_reset_n" SITE "P4";
+
+LOCATE COMP "phy_mdc" SITE "N5";
+LOCATE COMP "phy_mdio" SITE "P5";
+
+LOCATE COMP "phy0_gtxclk" SITE "G1";
+LOCATE COMP "phy0_txd[0]" SITE "G2";
+LOCATE COMP "phy0_txd[1]" SITE "H1";
+LOCATE COMP "phy0_txd[2]" SITE "J1";
+LOCATE COMP "phy0_txd[3]" SITE "J3";
+LOCATE COMP "phy0_tx_en" SITE "K1";
+LOCATE COMP "phy0_rxc" SITE "H2";
+LOCATE COMP "phy0_rxd[0]" SITE "K2";
+LOCATE COMP "phy0_rxd[1]" SITE "L1";
+LOCATE COMP "phy0_rxd[2]" SITE "N1";
+LOCATE COMP "phy0_rxd[3]" SITE "P1";
+LOCATE COMP "phy0_rx_dv" SITE "P2";
+
+LOCATE COMP "phy1_gtxclk" SITE "U19";
+LOCATE COMP "phy1_txd[0]" SITE "U20";
+LOCATE COMP "phy1_txd[1]" SITE "T19";
+LOCATE COMP "phy1_txd[2]" SITE "T20";
+LOCATE COMP "phy1_txd[3]" SITE "R20";
+LOCATE COMP "phy1_tx_en" SITE "P19";
+LOCATE COMP "phy1_rxc" SITE "L19";
+LOCATE COMP "phy1_rxd[0]" SITE "P20";
+LOCATE COMP "phy1_rxd[1]" SITE "N19";
+LOCATE COMP "phy1_rxd[2]" SITE "N20";
+LOCATE COMP "phy1_rxd[3]" SITE "M19";
+LOCATE COMP "phy1_rx_dv" SITE "M20";
+
+# HUB75
+LOCATE COMP "hub75_addr[0]" SITE "F1";
+LOCATE COMP "hub75_addr[1]" SITE "E2";
+LOCATE COMP "hub75_addr[2]" SITE "E1";
+LOCATE COMP "hub75_addr[3]" SITE "F2";
+LOCATE COMP "hub75_addr[4]" SITE "J17";
+
+LOCATE COMP "hub75_clk" SITE "C18";
+LOCATE COMP "hub75_le" SITE "J18";
+LOCATE COMP "hub75_blank" SITE "H16";
+
+LOCATE COMP "hub75_data[0]" SITE "B3";
+LOCATE COMP "hub75_data[1]" SITE "A2";
+LOCATE COMP "hub75_data[2]" SITE "B2";
+LOCATE COMP "hub75_data[3]" SITE "B1";
+LOCATE COMP "hub75_data[4]" SITE "C2";
+LOCATE COMP "hub75_data[5]" SITE "C1";
+LOCATE COMP "hub75_data[6]" SITE "D2";
+LOCATE COMP "hub75_data[7]" SITE "H3";
+LOCATE COMP "hub75_data[8]" SITE "H4";
+LOCATE COMP "hub75_data[9]" SITE "J4";
+LOCATE COMP "hub75_data[10]" SITE "B4";
+LOCATE COMP "hub75_data[11]" SITE "A3";
+LOCATE COMP "hub75_data[12]" SITE "D1";
+LOCATE COMP "hub75_data[13]" SITE "J5";
+LOCATE COMP "hub75_data[14]" SITE "K4";
+LOCATE COMP "hub75_data[15]" SITE "K5";
+LOCATE COMP "hub75_data[16]" SITE "K3";
+LOCATE COMP "hub75_data[17]" SITE "E5";
+LOCATE COMP "hub75_data[18]" SITE "N3";
+LOCATE COMP "hub75_data[19]" SITE "N4";
+LOCATE COMP "hub75_data[20]" SITE "R3";
+LOCATE COMP "hub75_data[21]" SITE "T3";
+LOCATE COMP "hub75_data[22]" SITE "R1";
+LOCATE COMP "hub75_data[23]" SITE "T1";
+LOCATE COMP "hub75_data[24]" SITE "U17";
+LOCATE COMP "hub75_data[25]" SITE "U18";
+LOCATE COMP "hub75_data[26]" SITE "T17";
+LOCATE COMP "hub75_data[27]" SITE "T18";
+LOCATE COMP "hub75_data[28]" SITE "K20";
+LOCATE COMP "hub75_data[29]" SITE "L20";
+LOCATE COMP "hub75_data[30]" SITE "J20";
+LOCATE COMP "hub75_data[31]" SITE "K19";
+LOCATE COMP "hub75_data[32]" SITE "J19";
+LOCATE COMP "hub75_data[33]" SITE "G20";
+LOCATE COMP "hub75_data[34]" SITE "H20";
+LOCATE COMP "hub75_data[35]" SITE "G19";
+LOCATE COMP "hub75_data[36]" SITE "F19";
+LOCATE COMP "hub75_data[37]" SITE "F20";
+LOCATE COMP "hub75_data[38]" SITE "E20";
+LOCATE COMP "hub75_data[39]" SITE "D20";
+LOCATE COMP "hub75_data[40]" SITE "E19";
+LOCATE COMP "hub75_data[41]" SITE "D19";
+LOCATE COMP "hub75_data[42]" SITE "B20";
+LOCATE COMP "hub75_data[43]" SITE "C20";
+LOCATE COMP "hub75_data[44]" SITE "B19";
+LOCATE COMP "hub75_data[45]" SITE "B18";
+LOCATE COMP "hub75_data[46]" SITE "A19";
+LOCATE COMP "hub75_data[47]" SITE "A18";
