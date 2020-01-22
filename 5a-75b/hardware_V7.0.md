@@ -43,7 +43,7 @@ Connections
 Clock
 -----
 
-P6?
+A 25MHz clock is available at FPGA pin P6, and is also connected to both PHYs.
 
 SDRAM, U29
 ----------
@@ -78,11 +78,11 @@ SDRAM, U29
 | A9      | B7       |
 | A10/AP  | C8       |
 | BA      | A7       |
-| LDQM    | ?        |
-| UDQM    | ?        |
+| LDQM    | *GND*    |
+| UDQM    | *GND*    |
 | CLK     | C6       |
-| CKE     | ?        |
-| ~CS     | ?        |
+| CKE     | *3.3V*   |
+| ~CS     | *GND*    |
 | ~RAS    | D7       |
 | ~CAS    | E7       |
 | ~WE     | C7       |
@@ -120,10 +120,10 @@ SDRAM, U32
 | A9      | B7       |
 | A10/AP  | C8       |
 | BA      | A7       |
-| LDQM    | ?        |
-| UDQM    | ?        |
+| LDQM    | *GND*    |
+| UDQM    | *GND*    |
 | CLK     | C6       |
-| CKE     | ?        |
+| CKE     | *3.3V    |
 | ~CS     | *GND*    |
 | ~RAS    | D7       |
 | ~CAS    | E7       |
@@ -140,7 +140,7 @@ PHY0, U3
 | TXD[2]  | P2       |
 | TXD[3]  | L4       |
 | TX\_EN  | M3       |
-| RXC     | P5       |
+| RXC     | M1       |
 | RXD[0]  | N1       |
 | RXD[1]  | M5       |
 | RXD[2]  | N5       |
