@@ -31,6 +31,16 @@ JTAG is available on a 4-pin header next to the FPGA (U33). VCC/GND are availabl
 | J34 | *GND*    |
 
 
+### LED / Button
+
+The board has a FPGA controlled LED and a button, those signals are also accessible on the J19 connector
+
+| Pin | Function   | Note |
+|-----|------------|------|
+| U16 | LED D2     | Active low
+| R16 | Button J28 | Active low, pulled up with 10k
+
+
 ### SPI Flash (U31)
 
 | Flash Pin | FPGA Pin | Function | Notes |
@@ -58,7 +68,7 @@ The two SDRAMs are configured as 1M x32 with the address and control signals sha
 | DQ[4]        | E12              | E7               |
 | DQ[5]        | D11              | D7               |
 | DQ[6]        | C10              | E8               |
-| DQ[7]        | B17              | D9               |
+| DQ[7]        | B17              | D8               |
 | DQ[8]        | B8               | E9               |
 | DQ[9]        | A8               | D9               |
 | DQ[10]       | C7               | E11              |
@@ -97,7 +107,7 @@ The two SDRAMs are configured as 1M x32 with the address and control signals sha
 | MDIO       | P5              | P5
 | Reset#     | P4              | P4
 | PHYA[0]    | _wired to GND_  | _wired to 3v3_  | Fixes each PHY to different address
-| XTALO      | P3              | _na_
+| XTALO      | P3              | _na_            | Provides a 25 MHz clock to the FPGA
 |            |                 |
 | GTXCLK     | G1              | U19
 | TXD[0]     | G2              | U20
