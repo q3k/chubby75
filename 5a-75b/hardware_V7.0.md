@@ -140,7 +140,7 @@ PHY0, U3
 | TXD[2]  | P2       |
 | TXD[3]  | L4       |
 | TX\_EN  | M3       |
-| RXC     | P5       |
+| RXC     | M1       |
 | RXD[0]  | N1       |
 | RXD[1]  | M5       |
 | RXD[2]  | N5       |
