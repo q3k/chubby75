@@ -1,16 +1,26 @@
-RV901T LED "Receiver Card"
-=========================
+RV901T and ColorLight 5A-75B LED Receiver Cards
+===============================================
+
+This repository contains reverse engineering information about the following boards:
+
+* Linsn RV901T HUB75 LED driver card (which uses a Spartan 6 LX16 FPGA)
+* ColorLight 5A-75B V6.1 and V7.0 (which use a Lattice ECP5-25 FPGA)
+
+These are known as a "Receiver Card". Its stock function is to receive and forward framebuffer data using a proprietary protocol (from a "Sender Card") and blit out control signals to LED panels (via shields, like a HUB75 shield).
+
+The boards look like this:
 
 <img src="doc/front_annotated.jpg" />
 
-This repository contains bits and pieces about the Linsn RV901T HUB75 LED driver card, also known as a "Receiver Card". Its stock function is to receive and forward framebuffer data using a proprietary protocol (from a "Sender Card") and blit out control signals to LED panels (via shields, like a HUB75 shield).
+**Chubby75** is a project to reverse engineer, document and provide tools for these cards. 
+
+# Color Light 5A-75B 
+
+This project is only in the beginning stages. You can find information about it [here](./5a-75b/README.md).
+
+# RV901T LED
 
 As it contains a user-reprogrammable Spartan 6 FPGA (LX16, 14k 'logic cells', 9112 LUTs) and 2x GbE, it has potential to be usable as a general purpose FPGA development board, an interface card for various purposes, or a logic analyzer.
-
-**Chubby75** is a project to reverse engineer, document and provide tools based on this card.
-
-The project also contains reverse engineering information for the Colorlight 5A-75B card, a variant of the RV901T that uses a Lattice ECP5-25F FPGA.
-This project is only in the beginning stages. You can find information about it [here](./5a-75b/README.md).
 
 Documentation
 -------------
