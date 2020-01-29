@@ -1,12 +1,16 @@
 Colorlight 5A-75B V1.0 Hardware
 ===============================
 
-Annotated PCB
--------------
-
 
 Components
 ----------
+
+
+PCB overview
+------------
+
+![PCB front](images/cl-5a-75b-v70-front.jpg)
+![PCB back](images/cl-5a-75b-v70-back.jpg)
 
 
 Definitions
