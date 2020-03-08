@@ -8,7 +8,10 @@ Components
 * Lattice ECP5 `LFE5U-25F-6BG256C` ([product page](https://www.latticesemi.com/Products/FPGAandCPLD/ECP5))
 * Winbond `25Q32JVSIQ`, 32 Mbits SPI flash ([datasheet](datasheets/w25q32jv_spi_revc_08302016.pdf))
 * 2x Broadcom `B50612D` Gigabit Ethernet PHYs ([datasheet](datasheets/B50610-DS07-RDS.pdf))
-* 2x ESMT `M12L16161A-5T` 1M x 16bit 200MHz SDRAMs (organized as 1M x 32bit) ([datasheet](datasheets/M12L16161A.pdf))
+* 2x ESMT `M12L16161A-5T` 1M x 16bit 200MHz SDRAMs (organized as 1M x 32bit) ([datasheet](datasheets/M12L16161A.pdf))  
+  or  
+  2x WinBond `W9816G6JH-6` 1M x 16bit 166MHz SDRAMs (organized as 1M x 32bit)
+  ([datasheet](datasheets/w9816g6jh_a02-1489757.pdf))
 * 12x `74HC245T` Octal Bidirectional Transceiver (used for level translation to 5V)
 
 
