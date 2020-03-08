@@ -1,4 +1,4 @@
-Colorlight 5A-75B V1.0 Hardware
+Colorlight 5A-75B V7.0 Hardware
 ===============================
 
 
