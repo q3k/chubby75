@@ -21,7 +21,7 @@ Trellis for bitstream handling.)
 
 You can find information about it [here](./5a-75b/README.md).
 
-![5A-75B V6.1 Front View](./5a-75b/images/cl-5a-75b-v61-front.jpg)
+![5A-75B V6.1 Front View](./5a-75b/images/cl-5a-75b-v61-front-annotated.jpg)
 
 # RV901T LED
 ------------

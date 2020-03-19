@@ -10,7 +10,7 @@
 
 ## PCB overview
 
-![PCB front](images/cl-5a-75b-v61-front.jpg)
+![PCB front](images/cl-5a-75b-v61-front-annotated.jpg)
 ![PCB back](images/cl-5a-75b-v61-back.jpg)
 
 
