@@ -3,7 +3,7 @@ RV901T Receiver Card
 
 The Linsn RV901T HUB75 LED driver card has a Spartan 6 LX16 FPGA.
 
-![RV901T Front View](./rv901t/doc/front_annotated.jpg)
+![RV901T Front View](./doc/front_annotated.jpg)
 
 The Linsn RV901T contains a user-reprogrammable Spartan 6 FPGA (LX16, 14k 'logic cells', 9112 LUTs) and 2x GbE, it has 
 potential to be usable as a general purpose FPGA development board, an interface card for various purposes, 
