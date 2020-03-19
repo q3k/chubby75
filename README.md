@@ -23,8 +23,8 @@ You can find information about it [here](./5a-75b/README.md).
 
 ![5A-75B V6.1 Front View](./5a-75b/images/cl-5a-75b-v61-front-annotated.jpg)
 
-# RV901T LED
-------------
+RV901T LED
+----------
 
 ![RV901T Front View](./rv901t/doc/front_annotated.jpg)
 
@@ -33,6 +33,23 @@ You can find information about it [here](./rv901t/README.md).
 As it contains a user-reprogrammable Spartan 6 FPGA (LX16, 14k 'logic cells', 9112 LUTs) and 2x GbE, it has 
 potential to be usable as a general purpose FPGA development board, an interface card for various purposes, 
 or a logic analyzer.
+
+RV908 - No Supported
+--------------------
+
+There are RV908 boards which are an RV901T with the HUB75 daughter board integrated.
+
+At least 2 versions are known to exist: RV908M32 and RV908T. The RV908T is likely a cost 
+reduction of the RV908M32.
+
+The RV908M32 has JTAG testpoints that are similar to the RV901T (which requires some scraping of silk
+screen and soldering work to get access.) The RV908T has no known JTAG testpoints at all.
+
+See issue #20 for some discussion about these 2 boards.
+
+It's hard to distinguish between the 2 boards or even specify with one to buy, so no further effort has been
+made to document reverse engineering details in this project.
+
 
 License
 -------
