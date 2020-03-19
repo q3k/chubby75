@@ -45,7 +45,7 @@ reduction of the RV908M32.
 The RV908M32 has JTAG testpoints that are similar to the RV901T (which requires some scraping of silk
 screen and soldering work to get access.) The RV908T has no known JTAG testpoints at all.
 
-See issue #20 for some discussion about these 2 boards.
+See [issue #20](https://github.com/q3k/chubby75/issues/20) for some discussion about these 2 boards.
 
 It's hard to distinguish between the 2 boards or even specify with one to buy, so no further effort has been
 made to document reverse engineering details in this project.
