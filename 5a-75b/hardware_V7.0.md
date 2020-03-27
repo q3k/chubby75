@@ -187,6 +187,7 @@ PHY1, U7
 Buffers
 -------
 
+Buffer U18_B2, U18_B3, U21_B2, U21_B3 are not connected to any Jx connectors.
 
 LED, Button
 -----------
@@ -198,183 +199,183 @@ Additionally, there is a button (J28, KEY+). When M13 is an input, pressing the 
 Connector J1
 --------------
 
-| J1 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        |  F3      |                                |                     |
-| 2     | G0        |  F1      |                                |                     |
-| 3     | B0        |  G3      |                                |                     |
-| 4     | *GND*     |  *GND*   |                                |                     |
-| 5     | R1        |  G2      |                                |                     |
-| 6     | G1        |  H3      |                                |                     |
-| 7     | B1        |  H5      |                                |                     |
-| 8     | E         |  F15     |                                |                     |
-| 9     | A         |  L2      |                                |                     |
-| 10    | B         |  K1      |                                |                     |
-| 11    | C         |  J5      |                                |                     |
-| 12    | D         |  K2      |                                |                     |
-| 13    | CLK       |  B16     |                                |                     |
-| 14    | STB       |  J14     |                                |                     |
-| 15    | OE        |  F12     |                                |                     |
-| 16    | *GND*     |  *GND*   |                                |                     |
+| J1 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes           |
+|-------|-----------|----------|---------|-----------------|
+| 1     | R0        |  F3      | U28_B7  |                 |
+| 2     | G0        |  F1      | U28_B6  |                 |
+| 3     | B0        |  G3      | U28_B5  |                 |
+| 4     | *GND*     |  *GND*   | *GND*   |                 |
+| 5     | R1        |  G2      | U28_B4  |                 |
+| 6     | G1        |  H3      | U28_B3  |                 |
+| 7     | B1        |  H5      | U28_B2  |                 |
+| 8     | E         |  F15     | *U17_B2 | Coupled with J2 |
+| 9     | A         |  L2      | *U10_B2 | Coupled with J2 |
+| 10    | B         |  K1      | *U10_B0 | Coupled with J2 |
+| 11    | C         |  J5      | *U10_B6 | Coupled with J2 |
+| 12    | D         |  K2      | *U10_B4 | Coupled with J2 |
+| 13    | CLK       |  B16     | U17_B4  |                 |
+| 14    | STB       |  J14     | U17_B0  |                 |
+| 15    | OE        |  F12     | U17_B6  |                 |
+| 16    | *GND*     |  *GND*   | *GND*   |                 |
 
 
 Connector J2
 --------------
 
-| J2 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        |  J4      |                                |                     |
-| 2     | G0        |  K3      |                                |                     |
-| 3     | B0        |  G1      |                                |                     |
-| 4     | *GND*     |  *GND*   |                                |                     |
-| 5     | R1        |  K4      |                                |                     |
-| 6     | G1        |  C2      |                                |                     |
-| 7     | B1        |  E3      |                                |                     |
-| 8     | E         |  F15     |                                |                     |
-| 9     | A         |  L2      |                                |                     |
-| 10    | B         |  K1      |                                |                     |
-| 11    | C         |  J5      |                                |                     |
-| 12    | D         |  K2      |                                |                     |
-| 13    | CLK       |  B16     |                                |                     |
-| 14    | STB       |  J14     |                                |                     |
-| 15    | OE        |  F12     |                                |                     |
-| 16    | *GND*     |  *GND*   |                                |                     |
+| J2 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes           |
+|-------|-----------|----------|---------|-----------------|
+| 1     | R0        |  J4      | U28_B1  |                 |
+| 2     | G0        |  K3      | U28_B0  |                 |
+| 3     | B0        |  G1      | U24_B7  |                 |
+| 4     | *GND*     |  *GND*   | *GND*   |                 |
+| 5     | R1        |  K4      | U24_B6  |                 |
+| 6     | G1        |  C2      | U24_B5  |                 |
+| 7     | B1        |  E3      | U24_B4  |                 |
+| 8     | E         |  F15     | *U17_B2 | Coupled with J1 |
+| 9     | A         |  L2      | *U10_B2 | Coupled with J1 |
+| 10    | B         |  K1      | *U10_B0 | Coupled with J1 |
+| 11    | C         |  J5      | *U10_B6 | Coupled with J1 |
+| 12    | D         |  K2      | *U10_B4 | Coupled with J1 |
+| 13    | CLK       |  B16     | U18_B4  |                 |
+| 14    | STB       |  J14     | U18_B0  |                 |
+| 15    | OE        |  F12     | U18_B6  |                 |
+| 16    | *GND*     |  *GND*   | *GND*   |                 |
 
 
 Connector J3
 --------------
 
-| J3 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        |  H4      |                                |                     |
-| 2     | G0        |  K5      |                                |                     |
-| 3     | B0        |  P1      |                                |                     |
-| 4     | *GND*     |  *GND*   |                                |                     |
-| 5     | R1        |  R1      |                                |                     |
-| 6     | G1        |  L5      |                                |                     |
-| 7     | B1        |  F2      |                                |                     |
-| 8     | E         |  F15     |                                |                     |
-| 9     | A         |  L2      |                                |                     |
-| 10    | B         |  K1      |                                |                     |
-| 11    | C         |  J5      |                                |                     |
-| 12    | D         |  K2      |                                |                     |
-| 13    | CLK       |  B16     |                                |                     |
-| 14    | STB       |  J14     |                                |                     |
-| 15    | OE        |  F12     |                                |                     |
-| 16    | *GND*     |  *GND*   |                                |                     |
+| J3 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes            |
+|-------|-----------|----------|---------|------------------|
+| 1     | R0        |  H4      | U24_B3  |                  |
+| 2     | G0        |  K5      | U24_B2  |                  |
+| 3     | B0        |  P1      | U24_B1  |                  |
+| 4     | *GND*     |  *GND*   | *GND*   |                  |
+| 5     | R1        |  R1      | U24_B0  |                  |
+| 6     | G1        |  L5      | U23_B7  |                  |
+| 7     | B1        |  F2      | U23_B6  |                  |
+| 8     | E         |  F15     | *U17_B3 | Coupled with J4  |
+| 9     | A         |  L2      | *U10_B3 | Coupled with J4  |
+| 10    | B         |  K1      | *U10_B1 | Coupled with J4  |
+| 11    | C         |  J5      | *U10_B7 | Coupled with J4  |
+| 12    | D         |  K2      | *U10_B5 | Coupled with J4  |
+| 13    | CLK       |  B16     | U18_B5  |                  |
+| 14    | STB       |  J14     | U18_B1  |                  |
+| 15    | OE        |  F12     | U18_B7  |                  |
+| 16    | *GND*     |  *GND*   | *GND*   |                  |
 
 
 Connector J4
 --------------
 
-| J1 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        |  P4      |                                |                     |
-| 2     | G0        |  R2      |                                |                     |
-| 3     | B0        |  M8      |                                |                     |
-| 4     | *GND*     |  *GND*   |                                |                     |
-| 5     | R1        |  ?       |                                |                     |
-| 6     | G1        |  T6      |                                |                     |
-| 7     | B1        |  R6      |                                |                     |
-| 8     | E         |  F15     |                                |                     |
-| 9     | A         |  L2      |                                |                     |
-| 10    | B         |  K1      |                                |                     |
-| 11    | C         |  J5      |                                |                     |
-| 12    | D         |  K2      |                                |                     |
-| 13    | CLK       |  B16     |                                |                     |
-| 14    | STB       |  J14     |                                |                     |
-| 15    | OE        |  F12     |                                |                     |
-| 16    | *GND*     |  *GND*   |                                |                     |
+| J1 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes            |
+|-------|-----------|----------|---------|------------------|
+| 1     | R0        |  P4      | U23_B5  |                  |
+| 2     | G0        |  R2      | U23_B4  |                  |
+| 3     | B0        |  M8      | U23_B3  |                  |
+| 4     | *GND*     |  *GND*   | *GND*   |                  |
+| 5     | R1        |  ?       | U23_B2  |                  |
+| 6     | G1        |  T6      | U23_B1  |                  |
+| 7     | B1        |  R6      | U23_B0  |                  |
+| 8     | E         |  F15     | *U17_B3 | Coupled with J3  |
+| 9     | A         |  L2      | *U10_B3 | Coupled with J3  |
+| 10    | B         |  K1      | *U10_B1 | Coupled with J3  |
+| 11    | C         |  J5      | *U10_B7 | Coupled with J3  |
+| 12    | D         |  K2      | *U10_B5 | Coupled with J3  |
+| 13    | CLK       |  B16     | U17_B5  |                  |
+| 14    | STB       |  J14     | U17_B1  |                  |
+| 15    | OE        |  F12     | U17_B7  |                  |
+| 16    | *GND*     |  *GND*   | *GND*   |                  |
 
 
 Connector J5
 --------------
 
-| J5 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        | M11      |                                |                     |
-| 2     | G0        | N11      |                                |                     |
-| 3     | B0        | P12      |                                |                     |
-| 4     | *GND*     | *GND*    |                                |                     |
-| 5     | R1        | K15      |                                |                     |
-| 6     | G1        | N12      |                                |                     |
-| 7     | B1        | L16      |                                |                     |
-| 8     | E         | F15      |                                |                     |
-| 9     | A         | L2       |                                |                     |
-| 10    | B         | K1       |                                |                     |
-| 11    | C         | J5       |                                |                     |
-| 12    | D         | K2       |                                |                     |
-| 13    | CLK       | B16      |                                |                     |
-| 14    | STB       | J14      |                                |                     |
-| 15    | OE        | F12      |                                |                     |
-| 16    | *GND*     | *GND*    |                                |                     |
+| J5 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes           |
+|-------|-----------|----------|---------|-----------------|
+| 1     | R0        | M11      | U9_B6   |                 |
+| 2     | G0        | N11      | U9_B7   |                 |
+| 3     | B0        | P12      | U9_B5   |                 |
+| 4     | *GND*     | *GND*    | *GND*   |                 |
+| 5     | R1        | K15      | U9_B3   |                 |
+| 6     | G1        | N12      | U9_B4   |                 |
+| 7     | B1        | L16      | U9_B2   |                 |
+| 8     | E         | F15      | *U20_B2 | Coupled with J6 |
+| 9     | A         | L2       | *U22_B0 | Coupled with J6 |
+| 10    | B         | K1       | *U22_B2 | Coupled with J6 |
+| 11    | C         | J5       | *U22_B4 | Coupled with J6 |
+| 12    | D         | K2       | *U22_B6 | Coupled with J6 |
+| 13    | CLK       | B16      | U20_B0  |                 |
+| 14    | STB       | J14      | U20_B4  |                 |
+| 15    | OE        | F12      | U20_B6  |                 |
+| 16    | *GND*     | *GND*    | *GND*   |                 |
 
 
 Connector J6
 --------------
 
-| J6 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        | K16      |                                |                     |
-| 2     | G0        | J15      |                                |                     |
-| 3     | B0        | J16      |                                |                     |
-| 4     | *GND*     | *GND*    |                                |                     |
-| 5     | R1        | J12      |                                |                     |
-| 6     | G1        | H15      |                                |                     |
-| 7     | B1        | G16      |                                |                     |
-| 8     | E         | F15      |                                |                     |
-| 9     | A         | L2       |                                |                     |
-| 10    | B         | K1       |                                |                     |
-| 11    | C         | J5       |                                |                     |
-| 12    | D         | K2       |                                |                     |
-| 13    | CLK       | B16      |                                |                     |
-| 14    | STB       | J14      |                                |                     |
-| 15    | OE        | F12      |                                |                     |
-| 16    | *GND*     | *GND*    |                                |                     |
+| J6 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes           |
+|-------|-----------|----------|---------|-----------------|
+| 1     | R0        | K16      | U9_B0   |                 |
+| 2     | G0        | J15      | U9_B1   |                 |
+| 3     | B0        | J16      | U12_B7  |                 |
+| 4     | *GND*     | *GND*    | *GND*   |                 |
+| 5     | R1        | J12      | U12_B5  |                 |
+| 6     | G1        | H15      | U12_B6  |                 |
+| 7     | B1        | G16      | U12_B4  |                 |
+| 8     | E         | F15      | *U20_B2 | Coupled with J5 |
+| 9     | A         | L2       | *U22_B0 | Coupled with J5 |
+| 10    | B         | K1       | *U22_B2 | Coupled with J5 |
+| 11    | C         | J5       | *U22_B4 | Coupled with J5 |
+| 12    | D         | K2       | *U22_B6 | Coupled with J5 |
+| 13    | CLK       | B16      | U21_B0  |                 |
+| 14    | STB       | J14      | U21_B4  |                 |
+| 15    | OE        | F12      | U21_B6  |                 |
+| 16    | *GND*     | *GND*    | *GND*   |                 |
 
 
 Connector J7
 --------------
 
-| J6 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        | H13      |                                |                     |
-| 2     | G0        | J13      |                                |                     |
-| 3     | B0        | H12      |                                |                     |
-| 4     | *GND*     | *GND*    |                                |                     |
-| 5     | R1        | G14      |                                |                     |
-| 6     | G1        | H14      |                                |                     |
-| 7     | B1        | G15      |                                |                     |
-| 8     | E         | F15      |                                |                     |
-| 9     | A         | L2       |                                |                     |
-| 10    | B         | K1       |                                |                     |
-| 11    | C         | J5       |                                |                     |
-| 12    | D         | K2       |                                |                     |
-| 13    | CLK       | B16      |                                |                     |
-| 14    | STB       | J14      |                                |                     |
-| 15    | OE        | F12      |                                |                     |
-| 16    | *GND*     | *GND*    |                                |                     |
+| J7 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes           |
+|-------|-----------|----------|---------|-----------------|
+| 1     | R0        | H13      | U12_B2  |                 |
+| 2     | G0        | J13      | U12_B3  |                 |
+| 3     | B0        | H12      | U12_B1  |                 |
+| 4     | *GND*     | *GND*    | *GND*   |                 |
+| 5     | R1        | G14      | U15_B7  |                 |
+| 6     | G1        | H14      | U12_B0  |                 |
+| 7     | B1        | G15      | U15_B6  |                 |
+| 8     | E         | F15      | *U20_B3 | Coupled with J8 |
+| 9     | A         | L2       | *U22_B1 | Coupled with J8 |
+| 10    | B         | K1       | *U22_B3 | Coupled with J8 |
+| 11    | C         | J5       | *U22_B5 | Coupled with J8 |
+| 12    | D         | K2       | *U22_B7 | Coupled with J8 |
+| 13    | CLK       | B16      | U21_B1  |                 |
+| 14    | STB       | J14      | U21_B5  |                 |
+| 15    | OE        | F12      | U21_B7  |                 |
+| 16    | *GND*     | *GND*    | *GND*   |                 |
 
 
 Connector J8
 --------------
 
-| J6 Pin| HUB75 pin | FPGA Pin | Buffer                         | Notes               |
-|-------|-----------|----------|--------------------------------|---------------------|
-| 1     | R0        | A15      |                                |                     |
-| 2     | G0        | F16      |                                |                     |
-| 3     | B0        | A14      |                                |                     |
-| 4     | *GND*     | *GND*    |                                |                     |
-| 5     | R1        | E13      |                                |                     |
-| 6     | G1        | B14      |                                |                     |
-| 7     | B1        | A13      |                                |                     |
-| 8     | E         | F15      |                                |                     |
-| 9     | A         | L2       |                                |                     |
-| 10    | B         | K1       |                                |                     |
-| 11    | C         | J5       |                                |                     |
-| 12    | D         | K2       |                                |                     |
-| 13    | CLK       | B16      |                                |                     |
-| 14    | STB       | J14      |                                |                     |
-| 15    | OE        | F12      |                                |                     |
-| 16    | *GND*     | *GND*    |                                |                     |
+| J6 Pin| HUB75 pin | FPGA Pin | Buffer  | Notes           |
+|-------|-----------|----------|---------|-----------------|
+| 1     | R0        | A15      | U15_B4  |                 |
+| 2     | G0        | F16      | U15_B5  |                 |
+| 3     | B0        | A14      | U15_B3  |                 |
+| 4     | *GND*     | *GND*    | *GND*   |                 |
+| 5     | R1        | E13      | U15_B1  |                 |
+| 6     | G1        | B14      | U15_B2  |                 |
+| 7     | B1        | A13      | U15_B0  |                 |
+| 8     | E         | F15      | *U20_B3 | Coupled with J7 |
+| 9     | A         | L2       | *U22_B1 | Coupled with J7 |
+| 10    | B         | K1       | *U22_B3 | Coupled with J7 |
+| 11    | C         | J5       | *U22_B5 | Coupled with J7 |
+| 12    | D         | K2       | *U22_B7 | Coupled with J7 |
+| 13    | CLK       | B16      | U20_B1  |                 |
+| 14    | STB       | J14      | U20_B5  |                 |
+| 15    | OE        | F12      | U20_B7  |                 |
+| 16    | *GND*     | *GND*    | *GND*   |                 |
 
