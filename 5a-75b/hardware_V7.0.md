@@ -274,7 +274,7 @@ Connector J4
 | 2     | G0        |  R2      | Bank 6 - PL38C / -            | U23_B4  |                  |
 | 3     | B0        |  M8      | Bank 8 - PB15B / DOUT/CSON    | U23_B3  |                  |
 | 4     | *GND*     |  *GND*   | -                             | *GND*   |                  |
-| 5     | R1        |  ?       | ?                             | U23_B2  |                  |
+| 5     | R1        |  M9      | Bank 8 - PB18A / WRITEN       | U23_B2  |                  |
 | 6     | G1        |  T6      | Bank 8 - __PB4A__ / D7/IO7    | U23_B1  |                  |
 | 7     | B1        |  R6      | Bank 8 - __PB4B__ / D6/IO6    | U23_B0  |                  |
 | 8     | E         |  F15     | Bank 2 - PR11C / -            | *U17_B3 | Coupled with J3  |
