@@ -274,7 +274,7 @@ Connector J4
 | 2     | G0        |  R2      | U23_B4  |                  |
 | 3     | B0        |  M8      | U23_B3  |                  |
 | 4     | *GND*     |  *GND*   | *GND*   |                  |
-| 5     | R1        |  ?       | U23_B2  |                  |
+| 5     | R1        |  M9      | U23_B2  |                  |
 | 6     | G1        |  T6      | U23_B1  |                  |
 | 7     | B1        |  R6      | U23_B0  |                  |
 | 8     | E         |  F15     | *U17_B3 | Coupled with J3  |
