@@ -40,6 +40,20 @@ There is a general purpose, FPGA controlled LED (DATA_LED-) at P11, active low (
 
 Additionally, there is a button (J28, KEY+) at M13. When M13 is an input, pressing the button will read low, otherwise it will read high.
 
+SPI Flash (U31)
+---------------
+
+| Flash Pin | FPGA Pin | Function | Notes |
+|-----------|----------|----------| ----- |
+| 1         |  N8      | CS#      |
+| 2         |  T7      | SO       |
+| 3         |  -       | WP#      | Wired to 3v3
+| 4         |  -       | GND      |
+| 5         |  T8      | SI       |
+| 6         |  N9      | SCK      |
+| 7         |  -       | HOLD#    | Wired to 3v3
+| 8         |  -       | VCC      | Wired to 3v3
+
 Connector J1
 --------------
 
