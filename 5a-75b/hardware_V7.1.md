@@ -54,6 +54,50 @@ SPI Flash (U31)
 | 7         |  -       | HOLD#    | Wired to 3v3
 | 8         |  -       | VCC      | Wired to 3v3
 
+SDRAM (U29 & U32)
+-----------------
+
+The two SDRAMs are configured as 1M x32 with the address and control signals shared and the data signals independently routed to the FPGA.
+
+| SDRAM Signal | FPGA Pin for U29 | FPGA Pin for U32 | Notes |
+|--------------|------------------|------------------|-------|
+| DQ0          | B13              | E2               |
+| DQ1          | A11              | E4               |
+| DQ2          | B9               | D3               |
+| DQ3          | C11              | E5               |
+| DQ4          | C9               | A4               |
+| DQ5          | C10              | D4               |
+| DQ6          | E8               | C4               |
+| DQ7          | B5               | D5               |
+| DQ8          | B6               | D6               |
+| DQ9          | A6               | E6               |
+| DQ10         | A5               | D8               |
+| DQ11         | B4               | A8               |
+| DQ12         | C3               | B8               |
+| DQ13         | B3               | B10              |
+| DQ14         | B2               | B11              |
+| DQ15         | A2               | E11              |
+| A0           | A9               | A9               |
+| A1           | E10              | E10              |
+| A2           | B12              | B12              |
+| A3           | D13              | D13              |
+| A4           | C12              | C12              |
+| A5           | D11              | D11              |
+| A6           | D10              | D10              |
+| A7           | E9               | E9               |
+| A8           | D9               | D9               |
+| A9           | B7               | B7               |
+| A10/AP       | C8               | C8               |
+| BA           | A7               | A7               |
+| LDQM         | -                | -                | Wired to GND
+| UDQM         | -                | -                | Wired to GND
+| CLK          | C6               | C6               |
+| CKE          | -                | -                | Wired to 3v3
+| CS#          | -                | -                | Wired to GND
+| RAS#         | D7               | D7               |
+| CAS#         | E7               | E7               |
+| WE#          | C7               | C7               |
+
 Connector J1
 --------------
 
