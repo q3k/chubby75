@@ -98,6 +98,48 @@ The two SDRAMs are configured as 1M x32 with the address and control signals sha
 | CAS#         | E7               | E7               |
 | WE#          | C7               | C7               |
 
+PHY0, U3
+----------
+
+| U3 Pin  | FPGA Pin | Notes |
+|---------|----------|-------|
+| GTXCLK  | M2       |
+| TXD[0]  | L1       |
+| TXD[1]  | L3       |
+| TXD[2]  | P2       |
+| TXD[3]  | L4       |
+| TX\_EN  | M3       |
+| RXC     | M1       | Connected to ~RESET via R100
+| RXD[0]  | N1       |
+| RXD[1]  | M5       |
+| RXD[2]  | N5       |
+| RXD[3]  | M6       |
+| RXD\_DV | N6       |
+| MDC     | P3       |
+| MDIO    | T2       |
+| ~RESET  | P5       | Drives RXC via R100
+
+PHY1, U7
+----------
+
+| U7 Pin  | FPGA Pin | Notes |
+|---------|----------|-------|
+| GTXCLK  | M12      |
+| TXD[0]  | T14      |
+| TXD[1]  | R12      |
+| TXD[2]  | R13      |
+| TXD[3]  | R14      |
+| TX\_EN  | R15      |
+| RXC     | M16      | Connected to ~RESET via R107
+| RXD[0]  | P13      |
+| RXD[1]  | N13      |
+| RXD[2]  | P14      |
+| RXD[3]  | M15      |
+| RXD\_DV | L15      |
+| MDC     | P3       |
+| MDIO    | T2       |
+| ~RESET  | P5       | Drives RXC via R107
+
 Connector J1
 --------------
 
