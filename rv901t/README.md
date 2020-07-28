@@ -16,6 +16,7 @@ Documentation
 * [Reverse engineered HUB75B Hat Hardware Documentation](./doc/hub75b_hat.md)
 * [Reverse engineered HUB7EB Hat Hardware Documentation](./doc/hub75e_hat.md)
 * [Getting Started with the RV901T Board: JTAG Connector and LED blink](./doc/getting_started/getting_started.md)
+* [Getting Started with the RV901T Board: new Improved JTAG Connector and LED blink](./doc/getting_started/improved_jtag_getting_started.md)
 
 Hardware
 --------
@@ -38,6 +39,7 @@ Status
    - [X] J601
    - [ ] JP5 - SPI flash connector?
    - [X] JP4
+   - [X] JP3 - Improved JTAG Connector
    - [ ] JP2
    - [X] U100 - SDRAM
  - Migen integration:
