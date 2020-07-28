@@ -17,6 +17,7 @@ Documentation
 * [Reverse engineered HUB7EB Hat Hardware Documentation](./doc/hub75e_hat.md)
 * [Getting Started with the RV901T Board: JTAG Connector and LED blink](./doc/getting_started/getting_started.md)
 * [Getting Started with the RV901T Board: Improved JTAG Connector and LED blink](./doc/getting_started/improved_jtag_getting_started.md)
+(recomended)
 
 The Improved JTAG Connector uses the JP3 header in a different purpose than
 originally planned and provide a stable and solid connection for the JTAG cable.
