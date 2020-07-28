@@ -18,6 +18,11 @@ Documentation
 * [Getting Started with the RV901T Board: JTAG Connector and LED blink](./doc/getting_started/getting_started.md)
 * [Getting Started with the RV901T Board: Improved JTAG Connector and LED blink](./doc/getting_started/improved_jtag_getting_started.md)
 
+The Improved JTAG Connector uses the JP3 header in a different purpose than
+originally planned and provide a stable and solid connection for the JTAG cable.
+Also, it require less skills to solder, as long the ground connection is
+alredy available in the connector.
+
 Hardware
 --------
 
