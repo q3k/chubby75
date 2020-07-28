@@ -16,6 +16,13 @@ Documentation
 * [Reverse engineered HUB75B Hat Hardware Documentation](./doc/hub75b_hat.md)
 * [Reverse engineered HUB7EB Hat Hardware Documentation](./doc/hub75e_hat.md)
 * [Getting Started with the RV901T Board: JTAG Connector and LED blink](./doc/getting_started/getting_started.md)
+* [Getting Started with the RV901T Board: Improved JTAG Connector and LED blink](./doc/getting_started/improved_jtag_getting_started.md)
+(recomended)
+
+The Improved JTAG Connector uses the JP3 header in a different purpose than
+originally planned, providing a stable and solid connection for the JTAG
+cable, as well less skills to solder and better electrical interface, as long 
+there are lots of ground connections alredy available in the connector.
 
 Hardware
 --------
@@ -38,6 +45,7 @@ Status
    - [X] J601
    - [ ] JP5 - SPI flash connector?
    - [X] JP4
+   - [X] JP3 - Improved JTAG Connector
    - [ ] JP2
    - [X] U100 - SDRAM
  - Migen integration:
