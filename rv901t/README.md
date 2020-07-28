@@ -20,9 +20,9 @@ Documentation
 (recomended)
 
 The Improved JTAG Connector uses the JP3 header in a different purpose than
-originally planned and provide a stable and solid connection for the JTAG cable.
-Also, it require less skills to solder, as long the ground connection is
-alredy available in the connector.
+originally planned, providing a stable and solid connection for the JTAG
+cable, as well less skills to solder and better electrical interface, as long 
+there are lots of ground connections alredy available in the connector.
 
 Hardware
 --------
