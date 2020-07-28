@@ -16,7 +16,7 @@ Documentation
 * [Reverse engineered HUB75B Hat Hardware Documentation](./doc/hub75b_hat.md)
 * [Reverse engineered HUB7EB Hat Hardware Documentation](./doc/hub75e_hat.md)
 * [Getting Started with the RV901T Board: JTAG Connector and LED blink](./doc/getting_started/getting_started.md)
-* [Getting Started with the RV901T Board: new Improved JTAG Connector and LED blink](./doc/getting_started/improved_jtag_getting_started.md)
+* [Getting Started with the RV901T Board: Improved JTAG Connector and LED blink](./doc/getting_started/improved_jtag_getting_started.md)
 
 Hardware
 --------
