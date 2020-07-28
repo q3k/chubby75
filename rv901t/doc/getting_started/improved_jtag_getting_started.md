@@ -46,18 +46,12 @@ Connect the exposed test points to the JP3 header pins in the solder side:
 
 ![Improved JTAG connections](improved_jtag_connections.jpg)
 
-Once that's done, connect the JTAG cable as illustrated:
-
-![Improved JTAG to JP3](improved_jtag_jp3_cable.jpg)
 
 Once that's done, it's a good idea to label the header pins:
 
 ![Header labels](improved_jtag_labels.jpg)
 
-Please note that the cable pin-1 (corresponding to the 3V3) 
-is not in the same position as the label:
 
-![Final Disposition](improved_jtag_orientation.jpg)
 
 
 ## Applying Power
@@ -82,6 +76,16 @@ as the button is pressed and released.
 Attach the downloading cable to the 5x2 header (in my case, I'm using a XILINX Platform Cable chinese clone):
 
 ![Cable connection to the JTAG header](improved_jtag_cable.jpg)
+
+Please note that the cable pin-1 (corresponding to the 3V3) 
+is not in the same position as the label:
+
+![Final Disposition](improved_jtag_orientation.jpg)
+
+Case your cable have some extra pins, align the connector in a way that the
+3V3 pin is aligned with the pin 1:
+
+![Improved JTAG to JP3](improved_jtag_jp3_cable.jpg)
 
 Then apply power to the RV901T board.
 The `STATUS` LED on the Platform Cable should turn green.
