@@ -82,8 +82,8 @@ Case your cable have some extra pins, align the connector in a way that the
 
 ![Improved JTAG to JP3](improved_jtag_jp3_cable.jpg)
 
-Please note that the cable pin-1 (corresponding to the 3V3) 
-is not in the same position as the label:
+Please note that the red wire in the cable (corresponding to the 3V3 or VREF) 
+must match in both sides of the cable:
 
 ![Final Disposition](improved_jtag_orientation.jpg)
 
