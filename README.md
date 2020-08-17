@@ -12,7 +12,7 @@ data using a proprietary protocol (from a "Sender Card") and blit out control si
 
 **Chubby75** is a project to reverse engineer, document and provide tools for these cards. 
 
-Color Light 5A-75B 
+Colorlight 5A-75B
 ------------------
 
 This is a very interesting card because bitstreams for its Lattice ECP5-25 FPGA can be generated
@@ -22,6 +22,15 @@ Trellis for bitstream handling.)
 You can find information about it [here](./5a-75b/README.md).
 
 ![5A-75B V6.1 Front View](./5a-75b/images/cl-5a-75b-v61-front-annotated.jpg)
+
+Colorlight 5A-75E
+------------------
+
+This board is almost identical to Colorlight 5A-75B, but has twice as many HUB75 ports.
+
+You can find information about it [here](./5a-75e/README.md).
+
+![5A-75E V7.1 Front View](./5a-75e/images/cl-5a-75e-v71-front.jpg)
 
 RV901T LED
 ----------
