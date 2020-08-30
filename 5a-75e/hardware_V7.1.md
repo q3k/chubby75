@@ -1,6 +1,9 @@
 Colorlight 5A-75E V7.1 Hardware
 ===============================
 
+* [Front image](images/cl-5a-75e-v71-front.jpg)
+* [Back image](images/cl-5a-75e-v71-back.jpg)
+
 Components
 ----------
 

@@ -14,7 +14,7 @@ The V6.0 board has the following components in addition to the FPGA:
 
 The V7.1 board has the following components in addition to the FPGA:
 
-* 2 1M x 16bit SDRAMs (on my board, they're EtronTech EM636165-6G 166MHz)
+* 2 1M x 16bit SDRAMs (ESMT M12L16161A-5T 200MHz)
 * 2 1Gb Ethernet PHYs (Broadcom B50612D, just like the RV901T)
 
 In addition, both boards have:
