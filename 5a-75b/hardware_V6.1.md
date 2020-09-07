@@ -334,6 +334,8 @@ Those are the simplest, all independent, one buffer per data bit with a 33R in s
 
 The LVDS in ECP5 are in always in pairs of A/B and C/D. But only the Left and Right banks has true hardware lvds support. The Top and Bottom have emulated LVDS and need external impedance match. The True LVDS support is denoted in the table.
 
+Notice that you will need to remove the corresponding level shifter from the board along with the resistors to correct use the LVDS ports.
+
 | I/O | Polarity |
 |-----|----------|
 |  A  | Positive |
