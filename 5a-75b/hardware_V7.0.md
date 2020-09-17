@@ -136,7 +136,7 @@ SDRAM, U32
 | LDQM    | *GND*    |
 | UDQM    | *GND*    |
 | CLK     | C6       |
-| CKE     | *3.3V    |
+| CKE     | *3.3V*   |
 | ~CS     | *GND*    |
 | ~RAS    | D7       |
 | ~CAS    | E7       |
