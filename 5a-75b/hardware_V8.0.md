@@ -43,8 +43,20 @@ JTAG is available on a 4-pin header next to the FPGA (U33). VCC/GND are availabl
 | J34 | *GND*    |
 
 
-SPI Flash
----------
+SPI Flash (U31)
+---------------
+
+| Flash Pin | FPGA Pin | Function | Notes |
+|-----------|----------|----------|-------|
+| 1         | T8       | CS#      |
+| 2         | FIXME       | SO       |
+| 3         | _na_     | WP#      | Wired to 3v3
+| 4         | _na_     | GND      |
+| 5         | N8       | SI       |
+| 6         | T7       | SCK      |
+| 7         | _na_     | Hold#    | Wired to 3v3
+| 8         | _na_     | VCC      | Wired to 3v3
+
 
 
 Connections
@@ -55,26 +67,13 @@ Clock
 
 A 25MHz clock is available at FPGA pin P6, and is also connected to both PHYs.
 
-PHY0, U11
-----------
-
-FIXME
-
-PHY1, U13
-----------
-
-FIXME
-
-Buffers
--------
-
 
 LED, Button
 -----------
 
 There is a general purpose, FPGA controlled LED (DATA_LED-) at T6, active low (FPGA pin should be set to open drain).
 
-Additionally, there is a button (J28, KEY+). When M13 is an input, pressing the button will read low, otherwise it will read high.
+Additionally, there is a button (J28, KEY+). When R7 is an input, pressing the button will read low, otherwise it will read high.
 
 Connector J1
 --------------
@@ -86,10 +85,10 @@ Connector J1
 | 3     | B0        |  E4      |                                   |         |                 |
 | 4     | *GND*     |  *GND*   | -                                 | *GND*   |                 |
 | 5     | R1        |  D3      |                                   |         |                 |
-| 6     | G1        |  F4      |                                   |         |                 |
-| 7     | B1        |  F5      | Bank 3 - PR47D - *LRC_GPLL0C_IN*  |         |                 |
-| 8     | E         |  E3      | Bank 6 - PL38A                    |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                  |         |                 |
+| 6     | G1        |  F5      |                                   |         |                 |
+| 7     | B1        |  E3      | Bank 3 - PR47D - *LRC_GPLL0C_IN*  |         |                 |
+| 8     | E         |  N4      |                                   |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*                    |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                    |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*                  |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                    |         |                 |
@@ -252,7 +251,7 @@ Connector J8
 | 4     | *GND*     |  *GND*   | -                             | *GND*   |                 |
 | 5     | R1        |  B16     |                               |         |                 |
 | 6     | G1        |  C15     |                               |         |                 |
-| 7     | B1        |  N5      |                               |         |                 |
+| 7     | B1        |  B15      |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
 | 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
