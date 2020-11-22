@@ -30,7 +30,7 @@ available on a 2-pin header near the Ethernet magnetics.
 
 ### Clock (Y1)
 
-A 25MHz clock is available on FPGA pin P6, and is also connected to both PHYs.
+A 25MHz clock is available on FPGA pin P6. It is provided by the PHYs so it stops when they are in reset state.
 
 | FPGA Pin | Function |
 |----------|----------|
@@ -133,8 +133,8 @@ are common between both PHYs.
 | R1        | 15        | TXD3
 | L2        | 19        | TXCTL
 | J1        | 27        | RXC
-| J3        | 25        | RXD0
-| K2        | 24        | RXD1
+| K2        | 25        | RXD0
+| J3        | 24        | RXD1
 | K1        | 23        | RXD2
 | K3        | 22        | RXD3
 | J2        | 26        | RXCTL
