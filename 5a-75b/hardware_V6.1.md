@@ -128,178 +128,178 @@ The two SDRAMs are configured as 1M x32 with the address and control signals sha
 
 #### J1
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | B3       | U28.7
-| 2         | G0           | A2       | U28.6
-| 3         | B0           | B2       | U28.5
-| 5         | R1           | B1       | U28.4
-| 6         | G1           | C2       | U28.2
-| 7         | B1           | C1       | U28.3
-|           |              |          |
-| 9         | A            | F1       | U10.2
-| 10        | B            | E2       | U10.4
-| 11        | C            | E1       | U10.6
-| 12        | D            | F2       | U10.0
-| 8         | E            | J17      | U17.2
-|           |              |          |
-| 13        | Clock        | C18      | U17.4
-| 14        | Latch        | J18      | U17.0
-| 15        | Blank        | H16      | U17.6
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | B3       | U28.7             |  PL5D     |    n     |
+| 2         | G0           | A2       | U28.6             |  PL14A    |    y     |
+| 3         | B0           | B2       | U28.5             |  PL14C    |    n     |
+| 5         | R1           | B1       | U28.4             |  PL14B    |    y     |
+| 6         | G1           | C2       | U28.2             |  PL14D    |    n     |
+| 7         | B1           | C1       | U28.3             |  PL17A    |    y     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U10.2             |  PL26B    |    y     |
+| 10        | B            | E2       | U10.4             |  PL23D    |    n     |
+| 11        | C            | E1       | U10.6             |  PL17D    |    n     |
+| 12        | D            | F2       | U10.0             |  PL23C    |    n     |
+| 8         | E            | J17      | U17.2             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U17.4             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U17.0             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U17.6             |  PR8D     |    n     |
 
 
 #### J2
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | D2       | U28.1
-| 2         | G0           | H3       | U28.0
-| 3         | B0           | H4       | U24.7
-| 5         | R1           | J4       | U24.6
-| 6         | G1           | B4       | U24.5
-| 7         | B1           | A3       | U24.4
-|           |              |          |
-| 9         | A            | F1       | U10.2
-| 10        | B            | E2       | U10.4
-| 11        | C            | E1       | U10.6
-| 12        | D            | F2       | U10.0
-| 8         | E            | J17      | U17.2
-|           |              |          |
-| 13        | Clock        | C18      | U16.4
-| 14        | Latch        | J18      | U16.0
-| 15        | Blank        | H16      | U16.6
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | D2       | U28.1             |  PL17C    |    n     |
+| 2         | G0           | H3       | U28.0             |  PL20D    |    n     |
+| 3         | B0           | H4       | U24.7             |  PL20A    |    y     |
+| 5         | R1           | J4       | U24.6             |  PL29A    |    y     |
+| 6         | G1           | B4       | U24.5             |  PL5B     |    y     |
+| 7         | B1           | A3       | U24.4             |  PL5C     |    n     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U10.2             |  PL26B    |    y     |
+| 10        | B            | E2       | U10.4             |  PL23D    |    n     |
+| 11        | C            | E1       | U10.6             |  PL17D    |    n     |
+| 12        | D            | F2       | U10.0             |  PL23C    |    n     |
+| 8         | E            | J17      | U17.2             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U16.4             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U16.0             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U16.6             |  PR8D     |    n     |
 
 
 #### J3
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | D1       | U24.3
-| 2         | G0           | J5       | U24.2
-| 3         | B0           | K4       | U24.1
-| 5         | R1           | K5       | U24.0
-| 6         | G1           | K3       | U23.7
-| 7         | B1           | E5       | U23.6
-|           |              |          |
-| 9         | A            | F1       | U10.3
-| 10        | B            | E2       | U10.5
-| 11        | C            | E1       | U10.7
-| 12        | D            | F2       | U10.1
-| 8         | E            | J17      | U17.3
-|           |              |          |
-| 13        | Clock        | C18      | U16.5
-| 14        | Latch        | J18      | U16.1
-| 15        | Blank        | H16      | U16.7
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | D1       | U24.3             |  PL17B    |    y     |
+| 2         | G0           | J5       | U24.2             |  PL29B    |    y     |
+| 3         | B0           | K4       | U24.1             |  PL35A    |    y     |
+| 5         | R1           | K5       | U24.0             |  PL35B    |    y     |
+| 6         | G1           | K3       | U23.7             |  PL29D    |    n     |
+| 7         | B1           | E5       | U23.6             |  PL11C    |    n     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U10.3             |  PL26B    |    y     |
+| 10        | B            | E2       | U10.5             |  PL23D    |    n     |
+| 11        | C            | E1       | U10.7             |  PL17D    |    n     |
+| 12        | D            | F2       | U10.1             |  PL23C    |    n     |
+| 8         | E            | J17      | U17.3             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U16.5             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U16.1             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U16.7             |  PR8D     |    n     |
 
 
 #### J4
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | N3       | U23.5
-| 2         | G0           | N4       | U23.4
-| 3         | B0           | R3       | U23.3
-| 5         | R1           | T3       | U23.2
-| 6         | G1           | R1       | U23.1
-| 7         | B1           | T1       | U23.0
-|           |              |          |
-| 9         | A            | F1       | U10.3
-| 10        | B            | E2       | U10.5
-| 11        | C            | E1       | U10.7
-| 12        | D            | F2       | U10.1
-| 8         | E            | J17      | U17.3
-|           |              |          |
-| 13        | Clock        | C18      | U17.5
-| 14        | Latch        | J18      | U17.1
-| 15        | Blank        | H16      | U17.7
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | N3       | U23.5             |  PL41A    |    y     |
+| 2         | G0           | N4       | U23.4             |  PL38C    |    n     |
+| 3         | B0           | R3       | U23.3             |  PB15B    |    n     |
+| 5         | R1           | T3       | U23.2             |  PB18A    |    n     |
+| 6         | G1           | R1       | U23.1             |  PB4A     |    n     |
+| 7         | B1           | T1       | U23.0             |  PB4B     |    n     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U10.3             |  PL26B    |    y     |
+| 10        | B            | E2       | U10.5             |  PL23D    |    n     |
+| 11        | C            | E1       | U10.7             |  PL17D    |    n     |
+| 12        | D            | F2       | U10.1             |  PL23C    |    n     |
+| 8         | E            | J17      | U17.3             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U17.5             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U17.1             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U17.7             |  PR8D     |    n     |
 
 
 #### J5
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | U17      | U9.6
-| 2         | G0           | U18      | U9.7
-| 3         | B0           | T17      | U9.5
-| 5         | R1           | T18      | U9.3
-| 6         | G1           | K20      | U9.4
-| 7         | B1           | L20      | U9.2
-|           |              |          |
-| 9         | A            | F1       | U22.0
-| 10        | B            | E2       | U22.6
-| 11        | C            | E1       | U22.4
-| 12        | D            | F2       | U22.2
-| 8         | E            | J17      | U20.2
-|           |              |          |
-| 13        | Clock        | C18      | U20.0
-| 14        | Latch        | J18      | U20.4
-| 15        | Blank        | H16      | U20.6
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | U17      | U9.6              |  PR47B    |    y     |
+| 2         | G0           | U18      | U9.7              |  PR47A    |    y     |
+| 3         | B0           | T17      | U9.5              |  PR47D    |    n     |
+| 5         | R1           | T18      | U9.3              |  PR44D    |    n     |
+| 6         | G1           | K20      | U9.4              |  PR23D    |    n     |
+| 7         | B1           | L20      | U9.2              |  PR26A    |    y     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U22.0             |  PL26B    |    y     |
+| 10        | B            | E2       | U22.6             |  PL23D    |    n     |
+| 11        | C            | E1       | U22.4             |  PL17D    |    n     |
+| 12        | D            | F2       | U22.2             |  PL23C    |    n     |
+| 8         | E            | J17      | U20.2             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U20.0             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U20.4             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U20.6             |  PR8D     |    n     |
 
 
 #### J6
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | J20      | U9.0
-| 2         | G0           | K19      | U9.1
-| 3         | B0           | J19      | U12.7
-| 5         | R1           | G20      | U12.5
-| 6         | G1           | H20      | U12.6
-| 7         | B1           | G19      | U12.4
-|           |              |          |
-| 9         | A            | F1       | U22.0
-| 10        | B            | E2       | U22.6
-| 11        | C            | E1       | U22.4
-| 12        | D            | F2       | U22.2
-| 8         | E            | J17      | U20.2
-|           |              |          |
-| 13        | Clock        | C18      | U21.0
-| 14        | Latch        | J18      | U21.4
-| 15        | Blank        | H16      | U21.6
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | J20      | U9.0              |  PR23C    |    n     |
+| 2         | G0           | K19      | U9.1              |  PR23B    |    y     |
+| 3         | B0           | J19      | U12.7             |  PR23A    |    y     |
+| 5         | R1           | G20      | U12.5             |  PR17D    |    n     |
+| 6         | G1           | H20      | U12.6             |  PR20B    |    y     |
+| 7         | B1           | G19      | U12.4             |  PR20A    |    y     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U22.0             |  PL26B    |    y     |
+| 10        | B            | E2       | U22.6             |  PL23D    |    n     |
+| 11        | C            | E1       | U22.4             |  PL17D    |    n     |
+| 12        | D            | F2       | U22.2             |  PL23C    |    n     |
+| 8         | E            | J17      | U20.2             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U21.0             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U21.4             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U21.6             |  PR8D     |    n     |
 
 
 #### J7
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | F19      | U12.2
-| 2         | G0           | F20      | U12.3
-| 3         | B0           | E20      | U12.1
-| 5         | R1           | D20      | U15.7
-| 6         | G1           | E19      | U12.0
-| 7         | B1           | D19      | U15.6
-|           |              |          |
-| 9         | A            | F1       | U22.1
-| 10        | B            | E2       | U22.7
-| 11        | C            | E1       | U22.5
-| 12        | D            | F2       | U22.3
-| 8         | E            | J17      | U20.3
-|           |              |          |
-| 13        | Clock        | C18      | U21.1
-| 14        | Latch        | J18      | U21.5
-| 15        | Blank        | H16      | U21.7
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | F19      | U12.2             |  PR17B    |    y     |
+| 2         | G0           | F20      | U12.3             |  PR17C    |    n     |
+| 3         | B0           | E20      | U12.1             |  PR17A    |    y     |
+| 5         | R1           | D20      | U15.7             |  PR14C    |    n     |
+| 6         | G1           | E19      | U12.0             |  PR14D    |    n     |
+| 7         | B1           | D19      | U15.6             |  PR14B    |    y     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U22.1             |  PL26B    |    y     |
+| 10        | B            | E2       | U22.7             |  PL23D    |    n     |
+| 11        | C            | E1       | U22.5             |  PL17D    |    n     |
+| 12        | D            | F2       | U22.3             |  PL23C    |    n     |
+| 8         | E            | J17      | U20.3             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U21.1             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U21.5             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U21.7             |  PR8D     |    n     |
 
 
 #### J8
 
-| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |
-|-----------|--------------|----------|-------------------|
-| 1         | R0           | B20      | U15.4
-| 2         | G0           | C20      | U15.5
-| 3         | B0           | B19      | U15.3
-| 5         | R1           | B18      | U15.1
-| 6         | G1           | A19      | U15.2
-| 7         | B1           | A18      | U15.0
-|           |              |          |
-| 9         | A            | F1       | U22.1
-| 10        | B            | E2       | U22.7
-| 11        | C            | E1       | U22.5
-| 12        | D            | F2       | U22.3
-| 8         | E            | J17      | U20.3
-|           |              |          |
-| 13        | Clock        | C18      | U20.1
-| 14        | Latch        | J18      | U20.5
-| 15        | Blank        | H16      | U20.7
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED |
+|-----------|--------------|----------|-------------------|-----------|----------|
+| 1         | R0           | B20      | U15.4             |  PT67B    |    n     |
+| 2         | G0           | C20      | U15.5             |  PR14A    |    y     |
+| 3         | B0           | B19      | U15.3             |  PT65B    |    n     |
+| 5         | R1           | B18      | U15.1             |  PT62B    |    n     |
+| 6         | G1           | A19      | U15.2             |  PT67A    |    n     |
+| 7         | B1           | A18      | U15.0             |  PT65A    |    n     |
+|           |              |          |                   |           |          |
+| 9         | A            | F1       | U22.1             |  PL26B    |    y     |
+| 10        | B            | E2       | U22.7             |  PL23D    |    n     |
+| 11        | C            | E1       | U22.5             |  PL17D    |    n     |
+| 12        | D            | F2       | U22.3             |  PL23C    |    n     |
+| 8         | E            | J17      | U20.3             |  PR11C    |    n     |
+|           |              |          |                   |           |          |
+| 13        | Clock        | C18      | U20.1             |  PL26B    |    y     |
+| 14        | Latch        | J18      | U20.5             |  PL41A    |    y     |
+| 15        | Blank        | H16      | U20.7             |  PR8D     |    n     |
 
 
 ## Buffering architecture
@@ -330,3 +330,83 @@ Those are the simplest, all independent, one buffer per data bit with a 33R in s
 
 ![Buffer architecture data pins](images/buf_data.svg)
 
+## "Usable" LVDS Pairs
+
+The LVDS in ECP5 are in always in pairs of A/B and C/D. But only the Left and Right banks has true hardware lvds support. The Top and Bottom have emulated LVDS and need external impedance match. The True LVDS support is denoted in the table.
+
+Notice that you will need to remove the corresponding level shifter from the board along with the resistors to correct use the LVDS ports.
+
+| I/O | Polarity |
+|-----|----------|
+|  A  | Positive |
+|  B  | Negative |
+|  C  | Positive |
+|  D  | Negative |
+|-----|----------|
+
+| Bank | Position |
+|------|----------|
+|  0   |   TOP    |
+|  1   |   TOP    |
+|  2   |   RIGHT  |
+|  3   |   RIGHT  |
+|  4   |   BOTTOM |
+|  5   |   ----   |
+|  6   |   LEFT   |
+|  7   |   LEFT   |
+|  8   |   BOTTOM |
+
+
+#### J1
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 2         | G0           | A2       | U28.6             |  PL14A    |    y     |     P    |   7    |     Y     |
+| 5         | R1           | B1       | U28.4             |  PL14B    |    y     |     N    |   7    |     Y     |
+| 3         | B0           | B2       | U28.5             |  PL14C    |    n     |     P    |   7    |     Y     |
+| 6         | G1           | C2       | U28.2             |  PL14D    |    n     |     N    |   7    |     Y     |
+
+#### J2
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+|   NONE    |              |          |                   |           |          |          |        |           |
+
+
+#### J3
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 3         | B0           | K4       | U24.1             |  PL35A    |    y     |     P    |   6    |     Y     |
+| 5         | R1           | K5       | U24.0             |  PL35B    |    y     |     N    |   6    |     Y     |
+
+#### J4
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 6         | G1           | R1       | U23.1             |  PB4A     |    n     |     P    |   8    |     N     |
+| 7         | B1           | T1       | U23.0             |  PB4B     |    n     |     N    |   8    |     N     |
+
+#### J5
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 2         | G0           | U18      | U9.7              |  PR47A    |    y     |     P    |   3    |     Y     |
+| 1         | R0           | U17      | U9.6              |  PR47B    |    y     |     N    |   3    |     Y     |
+
+#### J6
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 3         | B0           | J19      | U12.7             |  PR23A    |    y     |    P     |   2    |     Y     |
+| 2         | G0           | K19      | U9.1              |  PR23B    |    y     |    N     |   2    |     Y     |
+| 7         | B1           | G19      | U12.4             |  PR20A    |    y     |    P     |   2    |     Y     |
+| 6         | G1           | H20      | U12.6             |  PR20B    |    y     |    N     |   2    |     Y     |
+
+#### J7
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 3         | B0           | E20      | U12.1             |  PR17A    |    y     |     P    |   2    |     Y     |
+| 1         | R0           | F19      | U12.2             |  PR17B    |    y     |     N    |   2    |     Y     |
+
+#### J8
+| HUB75 Pin | HUB75 Signal | FPGA Pin | Buffer chip / bit |  Function | HI SPEED | Polarity |  Bank  | True LVDS |
+|-----------|--------------|----------|-------------------|-----------|----------|----------|--------|-----------|
+| 6         | G1           | A19      | U15.2             |  PT67A    |    n     |    P     |   1    |     N     |
+| 1         | R0           | B20      | U15.4             |  PT67B    |    n     |    N     |   1    |     N     |
+| 7         | B1           | A18      | U15.0             |  PT65A    |    n     |    P     |   1    |     N     |
+| 3         | B0           | B19      | U15.3             |  PT65B    |    n     |    N     |   1    |     N     |
