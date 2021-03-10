@@ -39,7 +39,7 @@ the 2 terminals of J500. The top terminal of J500 is 5V, the bottom is GND.
 JTAG
 ----
 The board seems has no exposed JTAG pins. However, there are marked test pads / vias on the front of the board, underneat silkscreen, to the top-right of the FPGA.
-For detailed instructions on how to wire up the JTAG interface see:[Getting Started](getting_started/getting_started.md) and [Improved Getting Started](getting_started/improved_jtag_getting_started.md)
+For detailed instructions on how to wire up the JTAG interface see: [Getting Started](getting_started/getting_started.md) and [Improved Getting Started](getting_started/improved_jtag_getting_started.md)
 
 Additionaly the DONE and PROG_B pins are available on JP5
 
@@ -82,7 +82,7 @@ For Migen/Litex: JP4 Pin3(H5) is used as serial TX, JP4 Pin5(G6) as serial RX
 | **GND** | **GND** | **GND**  | **1** | **2** |          |         |        |
 | TX| Unbuffered 3v3| **H5**   | **3** | **4** | **G5**   | Unbuffered 3v3|  |
 | RX| Unbuffered 3v3| **G6**   | **5** | **6** | **F5**   | Unbuffered 3v3|  |
-|   | U610 channel 0| **F12**  | **7** | **8** | **F6**   | U610 channel 1|  |
+|   | U610 chan 0   | **F12**  | **7** | **8** | **F6**   | U610 chan 1   |  |
 | **5V**   | **5V** |          | **9** | **10**|          |         |        |
 
 
