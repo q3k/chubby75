@@ -44,11 +44,32 @@ The board seems to have no exposed JTAG pins. However, there are marked test pad
 
 See [Getting Started](getting_started/getting_started.md) for detailed instructions on how to wire up the JTAG interface.
 
-SPI Flash
----------
 
-The SPI flash holding the configuration memory (U2) seems to be accessible via JP5. The flash I/Os are connected through 33Ω resistors. The PROG_B signal has to be shorted to GND in order to access the SPI flash. All signal pins on JP5 are unbuffered 3.3V
+Connections
+===========
 
+Clock
+-----
+
+A 25MHz clock from PHY1 is available at pin M9.
+
+
+Connector JP4
+-------------
+For Migen/Litex: JP4 Pin3(H5) is used as serial TX, JP4 Pin5(G6) as serial RX 
+
+| Shared  | Buffer  | FPGA Pin |JP4 Pin|JP4 Pin| FPGA Pin | Buffer  | Shared |
+|---------|---------|----------|-------|-------|----------|---------|--------|
+| **GND** | **GND** | **GND**  | **1** | **2** |          |         |        |
+| TX| Unbuffered 3v3| **H5**   | **3** | **4** | **G5**   | Unbuffered 3v3|  |
+| RX| Unbuffered 3v3| **G6**   | **5** | **6** | **F5**   | Unbuffered 3v3|  |
+|   | U610 channel 0| **F12**  | **7** | **8** | **F6**   | U610 channel 1|  |
+| **5V**   | **5V** |          | **9** | **10**|          |         |        |
+
+
+Connector JP5 (SPI Flash)
+-------------------------
+The SPI flash holding the configuration memory (U2) is accessible via JP5. The flash I/Os are unbuffered 3.3V, connected through 33Ω resistors. The PROG_B signal has to be shorted to GND in order to access the SPI flash.
 
 
 | Shared | U2 Pin      | FPGA Pin |JP5 Pin|JP5 Pin|FPGA Pin |U2 Pin | Shared |
@@ -62,14 +83,6 @@ The SPI flash holding the configuration memory (U2) seems to be accessible via J
 |        | /HOLD /RESET| P12      |       |       |         |       |        |
 |        | /WP         | N12      |       |       |         |       |        |
 
-
-Connections
-===========
-
-Clock
------
-
-A 25MHz clock from PHY1 is available at pin M9.
 
 SDRAM, U100
 -----------
@@ -308,20 +321,3 @@ Located on top of board.
 | 48      | *GND*    |                                           |                     |
 | 49      | *5V*     |                                           |                     |
 | 50      | *GND*    |                                           |                     |
-
-Connector JP4
--------------
-
-| Pin | Connectivity             | Notes                            |
-|-----|--------------------------|----------------------------------|
-| 1   | *GND*                    |                                  |
-| 2   | NC                       |                                  |
-| 3   | FPGA H5, Unbuffered      | Used as serial TX in Migen/Litex |
-| 4   | FPGA G5, Unbuffered      |                                  |
-| 5   | FPGA G6, Unbuffered      | Used as serial RX in Migen/Litex |
-| 6   | FPGA F5, Unbuffered      |                                  |
-| 7   | FPGA F12, U610 channel 0 |                                  |
-| 8   | FPGA F6, U610 channel 0  |                                  |
-| 9   | *5V*                     |                                  |
-| 10  | NV                       |                                  |
-
