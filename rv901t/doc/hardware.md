@@ -47,17 +47,18 @@ See [Getting Started](getting_started/getting_started.md) for detailed instructi
 SPI Flash
 ---------
 
-The SPI flash holding the configuration memory (U2) seems to be accessible via JP5, but this was not yet tested. The flash I/Os are connected through 33Ω resistors. The PROG_B signal has to be shorted to GND in order to access the SPI flash.
+The SPI flash holding the configuration memory (U2) seems to be accessible via JP5. The flash I/Os are connected through 33Ω resistors. The PROG_B signal has to be shorted to GND in order to access the SPI flash. All signal pins on JP5 are unbuffered 3.3V
 
 
 
-| Shared | U2 Pin      | FPGA Pin |J5 Pin |J5 Pin |FPGA Pin |U2 Pin | Shared |
+| Shared | U2 Pin      | FPGA Pin |JP5 Pin|JP5 Pin|FPGA Pin |U2 Pin | Shared |
 |--------|-------------|----------|-------|-------|---------|-------|--------|
-| CLK    | CLK         | R11      | 1     | 2     |         |       |        |
-| MISO   | DO          | P10      | 3     | 4     |         |       | 5V     |
-| DONE   |             | P13      | 5     | 6     | T2      |       | PROG_B |
-| CS     | CS          | T3       | 7     | 8     |         |       |        |
-| MOSI   | DI          | T10      | 9     | 10    | **GND** |**GND**|**GND** |
+| CLK    | CLK         | R11      | **1** | **2** |         |       |        |
+| MISO   | DO          | P10      | **3** | **4** |         |       | 5V     |
+| DONE   |             | P13      | **5** | **6** | T2      |       | PROG_B |
+| CS     | CS          | T3       | **7** | **8** |         |       |        |
+| MOSI   | DI          | T10      | **9** | **10**| **GND** |**GND**|**GND** |
+|        |             |          |       |       |         |       |        |
 |        | /HOLD /RESET| P12      |       |       |         |       |        |
 |        | /WP         | N12      |       |       |         |       |        |
 
