@@ -11,7 +11,7 @@ Components
 
  - U1: **FPGA** Spartan 6, XC6SLX16, FTBGA256, speed grade 2C
  - U2: **Flash** Winbond 25Q32JV, SPI, 32Mb.
-   - [Datasheet](https://www.winbond.com/resource-files/w25q32jv%20spi%20revc%2008302016.pdf)
+   - [Datasheet](https://www.winbond.com/resource-files/w25q32jv%20revh%2001072019%20plus.pdf)
  - U100: **SDRAM** M12L64322A-5T, 512K x 32b x 4 banks (64Mb), 200MHz
    - Various SDRAM vendors such as ESMT and Winbond.
    - [ESMT Datasheet](https://www.esmt.com.tw/upload/pdf/ESMT/datasheets/M12L64322A(2S).pdf)
