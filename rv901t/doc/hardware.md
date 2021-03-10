@@ -174,6 +174,48 @@ is the bottom-left corner of the connector, pin 2 is upper-left, pin 49 bottom_r
 | **5V** | **5V**       |          | **49**    | **50**    | **GND**  | **GND**      | **GND**|
 
 
+PHY0, U200
+----------
+
+This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
+
+| U200 Pin | FPGA Pin |
+|----------|----------|
+| GTXCLK   | D1       |
+| TXD[0]   | E3       |
+| TXD[1]   | E2       |
+| TXD[2]   | E1       |
+| TXD[3]   | F3       |
+| TX\_EN   | E4       |
+| RXC      | F1       |
+| RXD[0]   | F2       |
+| RXD[1]   | F4       |
+| RXD[2]   | G1       |
+| RXD[3]   | G3       |
+| RXD\_DV  | H1       |
+
+
+PHY1, U201
+----------
+
+This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
+
+| U200 Pin | FPGA Pin |
+|----------|----------|
+| GTXCLK   | J1       |
+| TXD[0]   | J3       |
+| TXD[1]   | K1       |
+| TXD[2]   | K2       |
+| TXD[3]   | H3       |
+| TX\_EN   | H2       |
+| RXC      | K3       |
+| RXD[0]   | L1       |
+| RXD[1]   | L3       |
+| RXD[2]   | M1       |
+| RXD[3]   | M2       |
+| RXD\_DV  | M3       |
+
+
 SDRAM, U100
 -----------
 
@@ -234,47 +276,5 @@ SDRAM, U100
 | ~RAS     | J14      |
 | ~CAS     | H15      |
 | ~WE      | H16      |
-
-
-PHY0, U200
-----------
-
-This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
-
-| U200 Pin | FPGA Pin |
-|----------|----------|
-| GTXCLK   | D1       |
-| TXD[0]   | E3       |
-| TXD[1]   | E2       |
-| TXD[2]   | E1       |
-| TXD[3]   | F3       |
-| TX\_EN   | E4       |
-| RXC      | F1       |
-| RXD[0]   | F2       |
-| RXD[1]   | F4       |
-| RXD[2]   | G1       |
-| RXD[3]   | G3       |
-| RXD\_DV  | H1       |
-
-
-PHY1, U201
-----------
-
-This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
-
-| U200 Pin | FPGA Pin | Remarks                                        |
-|----------|----------|------------------------------------------------|
-| GTXCLK   | J1       |                                                |
-| TXD[0]   | J3       |                                                |
-| TXD[1]   | K1       |                                                |
-| TXD[2]   | K2       |                                                |
-| TXD[3]   | H3       |                                                |
-| TX\_EN   | H2       |                                                |
-| RXC      | K3       |                                                |
-| RXD[0]   | L1       |                                                |
-| RXD[1]   | L3       |                                                |
-| RXD[2]   | M1       |                                                |
-| RXD[3]   | M2       |                                                |
-| RXD\_DV  | M3       |                                                |
 
 
