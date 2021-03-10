@@ -3,15 +3,13 @@ RV901T Hardware
 
 Annotated PCB
 -------------
-
 <img src="front_annotated.jpg" />
 
 Components
 ----------
-
  - U1: **FPGA** Spartan 6, XC6SLX16, FTBGA256, speed grade 2C
  - U2: **Flash** Winbond 25Q32JV, SPI, 32Mb.
-   - [Datasheet](https://www.winbond.com/resource-files/w25q32jv%20spi%20revc%2008302016.pdf)
+   - [Datasheet](https://www.winbond.com/resource-files/w25q32jv%20revh%2001072019%20plus.pdf)
  - U100: **SDRAM** M12L64322A-5T, 512K x 32b x 4 banks (64Mb), 200MHz
    - Various SDRAM vendors such as ESMT and Winbond.
    - [ESMT Datasheet](https://www.esmt.com.tw/upload/pdf/ESMT/datasheets/M12L64322A(2S).pdf)
@@ -24,14 +22,15 @@ Components
 
 Definitions
 -----------
-
 We define 'top', 'bottom', 'left', 'right' as relative to the FPGA orientation - ie.,
 top is towards the 'A' row of balls, bottom towards 'T', left towards the '1' column of balls
 and right towards '16'.
 
+Connections
+===========
+
 Power
 -----
-
 The PCB requires a 5V power supply only. You can either use the standard 4-pin
 [disk-drive Molex connector](https://en.wikipedia.org/wiki/Molex_connector#Disk_drive) on J501, or you can use
 the 2 terminals of J500. The top terminal of J500 is 5V, the bottom is GND.
@@ -39,36 +38,187 @@ the 2 terminals of J500. The top terminal of J500 is 5V, the bottom is GND.
 
 JTAG
 ----
+The board has no exposed JTAG pins. However, there are marked test pads / vias on the front of the board, underneat silkscreen, to the top-right of the FPGA.
+For detailed instructions on how to wire up the JTAG interface see: [Getting Started](getting_started/getting_started.md) and [Improved Getting Started](getting_started/improved_jtag_getting_started.md)
 
-The board seems to have no exposed JTAG pins. However, there are marked test pads / vias on the front of the board, underneat silkscreen, to the top-right of the FPGA.
+Additionaly the DONE and PROG_B pins are available on JP5
 
-See [Getting Started](getting_started/getting_started.md) for detailed instructions on how to wire up the JTAG interface.
+| JTAG | FPGA Pin |
+|------|----------|
+| TCK  | C14      |
+| TDI  | C12      |
+| TMS  | A15      |
+| TDO  | E14      |
 
-SPI Flash
----------
 
-The SPI flash holding the configuration memory (U2) seems to be accessible via JP5, but this was not yet tested. The flash I/Os are connected through 33Ω resistors. The PROG_B signal has to be shorted to GND in order to access the SPI flash.
+Buffers
+-------
+All I/O Buffers are 5V. 
+  - Buffers U600 to U607 have a direction pin at F13.
+  - Buffers U608 to U610 are hardwired to output.
 
-| JP5 Pin | U2 Pin    |
-|---------|-----------|
-| 1       | CLK       |
-| 2       |           |
-| 3       | D0/IO1    |
-| 4       | +5V       |
-| 5       | DONE      |
-| 6       | PROG_B    |
-| 7       | CS        |
-| 8       |           |
-| 9       | DI/IO0    |
-| 10      | **GND**   |
+| F13 | Direction |
+|-----|-----------|
+| 0   | Output    |
+| 1   | Input     |
 
-Connections
-===========
+
+Button / LED
+-----------
+There is a general purpose, FPGA controlled LED at F7, active low (FPGA pin should be set to open drain).
+
+Additionally, there is a button (S1). When F7 is an input, pressing the button will read low, otherwise it will read high. Pressing the button will [also always illuminate the LED](https://github.com/q3k/chubby75/issues/8).
+
 
 Clock
 -----
-
 A 25MHz clock from PHY1 is available at pin M9.
+
+
+Connector JP4
+-------------
+For Migen/Litex: 
+  - JP4 Pin3 (H5) is used as serial TX 
+  - JP4 Pin5 (G6) is used as serial RX 
+
+| Shared  | Buffer  | FPGA Pin |JP4 Pin|JP4 Pin| FPGA Pin | Buffer  | Shared |
+|---------|---------|----------|-------|-------|----------|---------|--------|
+| **GND** | **GND** | **GND**  | **1** | **2** |          |         |        |
+| TX| Unbuffered 3v3| **H5**   | **3** | **4** | **G5**   | Unbuffered 3v3|  |
+| RX| Unbuffered 3v3| **G6**   | **5** | **6** | **F5**   | Unbuffered 3v3|  |
+|   | U610 chan 0   | **F12**  | **7** | **8** | **F6**   | U610 chan 1   |  |
+| **5V**   | **5V** |          | **9** | **10**|          |         |        |
+
+
+Connector JP5 (SPI Flash)
+-------------------------
+The SPI flash holding the configuration memory (U2) is accessible via JP5. The flash I/Os are unbuffered 3.3V, connected through 33Ω resistors. The PROG_B signal has to be pulled LOW to GND in order to access the SPI flash.
+
+| Shared | U2 Pin      | FPGA Pin |JP5 Pin|JP5 Pin|FPGA Pin |U2 Pin   | Shared |
+|--------|-------------|----------|-------|-------|---------|---------|--------|
+| CLK    | CLK         | R11      | **1** | **2** |         |         |        |
+| MISO   | DO          | P10      | **3** | **4** |         |         | **5V** |
+| DONE   |             | P13      | **5** | **6** | T2      |         | PROG_B |
+| CS     | CS          | T3       | **7** | **8** |         |         |        |
+| MOSI   | DI          | T10      | **9** | **10**| **GND** |**GND**  |**GND** |
+|        |             |          |       |       |         |         |        |
+|        | /HOLD /RESET| P12      |       |       |         |         |        |
+|        | /WP         | N12      |       |       |         |         |        |
+
+
+Connector JP600
+---------------
+Located on bottom of board.
+
+Pin 1 labeled with arrow on top silkscreen layer. Pins are marked alternating, ie. pin 1
+is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left and pin 50 bottom-left.
+
+| Shared | Buffer       |FPGA Pin  | JP600 Pin | JP600 Pin | FPGA Pin | Buffer       | Shared |
+|--------|--------------|----------|-----------|-----------|----------|--------------|--------|
+| **GND**| **GND**      | **GND**  | **1**     | **2**     |          | **5V**       | **5V** |
+| **GND**| **GND**      | **GND**  | **3**     | **4**     | J6       | U610, chan 2, through R603| J601.4 |
+| **GND**| **GND**      | **GND**  | **5**     | **6**     | A11      | U608, chan 0 | J601.6 |
+|        | U600, chan 7 | P4       | **7**     | **8**     | R1       | U600, chan 6 |        |
+|        | U600, chan 5 | M4       | **9**     | **10**    | L5       | U600, chan 4 |        |
+|        | U600, chan 3 | M5       | **11**    | **12**    | K6       | U600, chan 2 |        |
+|        | U600, chan 1 | T4       | **13**    | **14**    | P5       | U600, chan 0 |        |
+|        | U604, chan 7 | P6       | **15**    | **16**    | M7       | U604, chan 6 |        |
+|        | U604, chan 5 | N6       | **17**    | **18**    | M6       | U604, chan 4 |        |
+|        | U604, chan 3 | L7       | **19**    | **20**    | L8       | U604, chan 2 |        |
+|        | U604, chan 1 | P7       | **21**    | **22**    | N8       | U604, chan 0 |        |
+|        | U601, chan 7 | M12      | **23**    | **24**    | N11      | U601, chan 6 |        |
+|        | U601, chan 5 | M11      | **25**    | **26**    | M10      | U601, chan 4 |        |
+|        | U601, chan 3 | L10      | **27**    | **28**    | N9       | U601, chan 2 |        |
+|        | U601, chan 1 | P11      | **29**    | **30**    | T11      | U601, chan 0 |        |
+|        | U605, chan 7 | R9       | **31**    | **32**    | T9       | U605, chan 6 |        |
+|        | U605, chan 5 | T8       | **33**    | **34**    | R7       | U605, chan 4 |        |
+|        | U605, chan 3 | T7       | **35**    | **36**    | T6       | U605, chan 2 |        |
+|        | U605, chan 1 | R5       | **37**    | **38**    | T5       | U605, chan 0 |        |
+| J601.39| U608, chan 7 | A12      | **39**    | **40**    | B12      | U608, chan 6 | J601.40|
+| J601.41| U608, chan 5 | A13      | **41**    | **42**    | C13      | U608, chan 4 | J601.42|
+| J601.43| U608, chan 3 | A14      | **43**    | **44**    | B14      | U608, chan 2 | J601.44|
+| J601.45| U608, chan 1 | C11      | **45**    | **46**    | **GND**  | **GND**      | **GND**|
+| J601.47| U610, chan 4, through R602| E13| **47** | **48**| **GND**  | **GND**      | **GND**|
+| **5V** | **5V**       |          | **49**    | **50**    | **GND**  | **GND**      | **GND**|
+
+
+Connector J601
+--------------
+Located on top of board.
+
+Pin 1 labeled with arrow on top silkscreen layer. Pins are marked alternating, ie. pin 1
+is the bottom-left corner of the connector, pin 2 is upper-left, pin 49 bottom_right and pin 50 upper-right.
+
+| Shared | Buffer       |FPGA Pin  | JP601 Pin | JP601 Pin | FPGA Pin | Buffer       | Shared |
+|--------|--------------|----------|-----------|-----------|----------|--------------|--------|
+| **GND**| **GND**      | **GND**  | **1**     | **2**     |          | **5V**       | **5V** |
+| **GND**| **GND**      | **GND**  | **3**     | **4**     | J6       | U610, chan 3 | J600.4 |
+| **GND**| **GND**      | **GND**  | **5**     | **6**     | A11      | U609, chan 0 | J600.6 |
+|        | U603, chan 7 | D3       | **7**     | **8**     | C3       | U603, chan 6 |        |
+|        | U603, chan 5 | B3       | **9**     | **10**    | D5       | U603, chan 4 |        |
+|        | U603, chan 3 | A4       | **11**    | **12**    | B2       | U603, chan 2 |        |
+|        | U603, chan 1 | A2       | **13**    | **14**    | A3       | U603, chan 0 |        |
+|        | U607, chan 7 | A5       | **15**    | **16**    | A6       | U607, chan 6 |        |
+|        | U607, chan 5 | A7       | **17**    | **18**    | A8       | U607, chan 4 |        |
+|        | U607, chan 3 | B8       | **19**    | **20**    | A9       | U607, chan 2 |        |
+|        | U607, chan 1 | A10      | **21**    | **22**    | B10      | U607, chan 0 |        |
+|        | U602, chan 7 | E11      | **23**    | **24**    | D12      | U602, chan 6 |        |
+|        | U602, chan 5 | D11      | **25**    | **26**    | E10      | U602, chan 4 |        |
+|        | U602, chan 3 | D9       | **27**    | **28**    | F9       | U602, chan 2 |        |
+|        | U602, chan 1 | D8       | **29**    | **30**    | E8       | U602, chan 0 |        |
+|        | U606, chan 7 | E7       | **31**    | **32**    | D6       | U606, chan 6 |        |
+|        | U606, chan 5 | E6       | **33**    | **34**    | C9       | U606, chan 4 |        |
+|        | U606, chan 3 | C8       | **35**    | **36**    | C7       | U606, chan 2 |        |
+|        | U606, chan 1 | C6       | **37**    | **38**    | B6       | U606, chan 0 |        |
+| J600.39| U609, chan 7 | A12      | **39**    | **40**    | B12      | U609, chan 6 | J600.40|
+| J600.41| U609, chan 5 | A13      | **41**    | **42**    | C13      | U609, chan 4 | J600.42|
+| J600.43| U609, chan 3 | A14      | **43**    | **44**    | B14      | U609, chan 2 | J600.44|
+| J600.45| U609, chan 1 | C11      | **45**    | **46**    | **GND**  | **GND**      | **GND**|
+| J600.47| U610, chan 5 | E13      | **47**    | **48**    | **GND**  | **GND**      | **GND**|
+| **5V** | **5V**       |          | **49**    | **50**    | **GND**  | **GND**      | **GND**|
+
+
+PHY0, U200
+----------
+
+This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
+
+| U200 Pin | FPGA Pin |
+|----------|----------|
+| GTXCLK   | D1       |
+| TXD[0]   | E3       |
+| TXD[1]   | E2       |
+| TXD[2]   | E1       |
+| TXD[3]   | F3       |
+| TX\_EN   | E4       |
+| RXC      | F1       |
+| RXD[0]   | F2       |
+| RXD[1]   | F4       |
+| RXD[2]   | G1       |
+| RXD[3]   | G3       |
+| RXD\_DV  | H1       |
+
+
+PHY1, U201
+----------
+
+This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
+
+| U200 Pin | FPGA Pin |
+|----------|----------|
+| GTXCLK   | J1       |
+| TXD[0]   | J3       |
+| TXD[1]   | K1       |
+| TXD[2]   | K2       |
+| TXD[3]   | H3       |
+| TX\_EN   | H2       |
+| RXC      | K3       |
+| RXD[0]   | L1       |
+| RXD[1]   | L3       |
+| RXD[2]   | M1       |
+| RXD[3]   | M2       |
+| RXD\_DV  | M3       |
+
 
 SDRAM, U100
 -----------
@@ -131,196 +281,4 @@ SDRAM, U100
 | ~CAS     | H15      |
 | ~WE      | H16      |
 
-PHY0, U200
-----------
-
-This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
-
-| U200 Pin | FPGA Pin |
-|----------|----------|
-| GTXCLK   | D1       |
-| TXD[0]   | E3       |
-| TXD[1]   | E2       |
-| TXD[2]   | E1       |
-| TXD[3]   | F3       |
-| TX\_EN   | E4       |
-| RXC      | F1       |
-| RXD[0]   | F2       |
-| RXD[1]   | F4       |
-| RXD[2]   | G1       |
-| RXD[3]   | G3       |
-| RXD\_DV  | H1       |
-
-PHY1, U201
-----------
-
-This PHY is hard-wired to autonegotiation, RST is hardwired to 0 and MDC/MDIO are tied off.
-
-| U200 Pin | FPGA Pin | Remarks                                        |
-|----------|----------|------------------------------------------------|
-| GTXCLK   | J1       |                                                |
-| TXD[0]   | J3       |                                                |
-| TXD[1]   | K1       |                                                |
-| TXD[2]   | K2       |                                                |
-| TXD[3]   | H3       |                                                |
-| TX\_EN   | H2       |                                                |
-| RXC      | K3       |                                                |
-| RXD[0]   | L1       |                                                |
-| RXD[1]   | L3       |                                                |
-| RXD[2]   | M1       |                                                |
-| RXD[3]   | M2       |                                                |
-| RXD\_DV  | M3       |                                                |
-
-
-Buffers
--------
-
-All I/O Buffers are 5V. Buffers U600 to U607 have a direction pin at F13.
-
-| F13 | Buffer Direction |
-|-----|------------------|
-| 0   | Output           |
-| 1   | Input            |
-
-LED, Button
------------
-
-There is a general purpose, FPGA controlled LED at F7, active low (FPGA pin should be set to open drain).
-
-Additionally, there is a button (S1). When F7 is an input, pressing the button will read low, otherwise it will read high. Pressing the button will [also always illuminate the LED](https://github.com/q3k/chubby75/issues/8).
-
-Connector J600
---------------
-
-Located on bottom of board.
-
-Pin 1 labeled with arrow on top silkscreen layer. Pins are marked alternating, ie. pin 1
-is the top-right corner of the connector, pin 2 is bottom-right, pin 49 top-left and pin 50 bottom-left.
-
-| J600 Pin| FPGA Pin | Buffer                                    | Notes               |
-|---------|----------|-------------------------------------------|---------------------|
-| 1       | *GND*    |                                           |                     |
-| 2       | *5V*     |                                           |                     |
-| 3       | *GND*    |                                           |                     |
-| 4       | J6       | U610, channel 2, through R603             | Shared with J601.4  |
-| 5       | *GND*    |                                           |                     |
-| 6       | A11      | U608, channel 0,                          | Shared with J601.6  |
-| 7       | P4       | U600, channel 7,                          |                     |
-| 8       | R1       | U600, channel 6                           |                     |
-| 9       | M4       | U600, channel 5                           |                     |
-| 10      | L5       | U600, channel 4                           |                     |
-| 11      | M5       | U600, channel 3                           |                     |
-| 12      | K6       | U600, channel 2                           |                     |
-| 13      | T4       | U600, channel 1                           |                     |
-| 14      | P5       | U600, channel 0                           |                     |
-| 15      | P6       | U604, channel 7                           |                     |
-| 16      | M7       | U604, channel 6                           |                     |
-| 17      | N6       | U604, channel 5                           |                     |
-| 18      | M6       | U604, channel 4                           |                     |
-| 19      | L7       | U604, channel 3                           |                     |
-| 20      | L8       | U604, channel 2                           |                     |
-| 21      | P7       | U604, channel 1                           |                     |
-| 22      | N8       | U604, channel 0                           |                     |
-| 23      | M12      | U601, channel 7                           |                     |
-| 24      | N11      | U601, channel 6                           |                     |
-| 25      | M11      | U601, channel 5                           |                     |
-| 26      | M10      | U601, channel 4                           |                     |
-| 27      | L10      | U601, channel 3                           |                     |
-| 28      | N9       | U601, channel 2                           |                     |
-| 29      | P11      | U601, channel 1                           |                     |
-| 30      | T11      | U601, channel 0                           |                     |
-| 31      | R9       | U605, channel 7                           |                     |
-| 32      | T9       | U605, channel 6                           |                     |
-| 33      | T8       | U605, channel 5                           |                     |
-| 34      | R7       | U605, channel 4                           |                     |
-| 35      | T7       | U605, channel 3                           |                     |
-| 36      | T6       | U605, channel 2                           |                     |
-| 37      | R5       | U605, channel 1                           |                     |
-| 38      | T5       | U605, channel 0                           |                     |
-| 39      | A12      | U608, channel 7                           | Shared with J601.39 |
-| 40      | B12      | U608, channel 6                           | Shared with J601.40 |
-| 41      | A13      | U608, channel 5                           | Shared with J601.41 |
-| 42      | C13      | U608, channel 4                           | Shared with J601.42 |
-| 43      | A14      | U608, channel 3                           | Shared with J601.43 |
-| 44      | B14      | U608, channel 2                           | Shared with J601.44 |
-| 45      | C11      | U608, channel 1                           | Shared with J601.45 |
-| 46      | *GND*    |                                           |                     |
-| 47      | E13      | U610, channel 4, through R602             | Shared with J601.47 |
-| 48      | *GND*    |                                           |                     |
-| 49      | *5V*     |                                           |                     |
-| 50      | *GND*    |                                           |                     |
-
-Connector J601
---------------
-
-Located on top of board.
-
-| J601 Pin| FPGA Pin | Buffer                                    | Notes               |
-|---------|----------|-------------------------------------------|---------------------|
-| 1       | *GND*    |                                           |                     |
-| 2       | *5V*     |                                           |                     |
-| 3       | *GND*    |                                           |                     |
-| 4       | J6       | U610, channel 3                           | Shared with J600.4  |
-| 5       | *GND*    |                                           |                     |
-| 6       | A11      | U609, channel 0                           | Shared with J600.6  |
-| 7       | D3       | U603, channel 7                           |                     |
-| 8       | C3       | U603, channel 6                           |                     |
-| 9       | B3       | U603, channel 5                           |                     |
-| 10      | D5       | U603, channel 4                           |                     |
-| 11      | A4       | U603, channel 3                           |                     |
-| 12      | B2       | U603, channel 2                           |                     |
-| 13      | A2       | U603, channel 1                           |                     |
-| 14      | A3       | U603, chnnael 0                           |                     |
-| 15      | A5       | U607, channel 7                           |                     |
-| 16      | A6       | U607, channel 6                           |                     |
-| 17      | A7       | U607, channel 5                           |                     |
-| 18      | A8       | U607, channel 4                           |                     |
-| 19      | B8       | U607, channel 3                           |                     |
-| 20      | A9       | U607, channel 2                           |                     |
-| 21      | A10      | U607, channel 1                           |                     |
-| 22      | B10      | U607, channel 0                           |                     |
-| 23      | E11      | U602, channel 7                           |                     |
-| 24      | D12      | U602, channel 6                           |                     |
-| 25      | D11      | U602, channel 5                           |                     |
-| 26      | E10      | U602, channel 4                           |                     |
-| 27      | D9       | U602, channel 3                           |                     |
-| 28      | F9       | U602, channel 2                           |                     |
-| 29      | D8       | U602, channel 1                           |                     |
-| 30      | E8       | U602, channel 0                           |                     |
-| 31      | E7       | U606, channel 7                           |                     |
-| 32      | D6       | U606, channel 6                           |                     |
-| 33      | E6       | U606, channel 5                           |                     |
-| 34      | C9       | U606, channel 4                           |                     |
-| 35      | C8       | U606, channel 3                           |                     |
-| 36      | C7       | U606, channel 2                           |                     |
-| 37      | C6       | U606, channel 1                           |                     |
-| 38      | B6       | U606, channel 0                           |                     |
-| 39      | A12      | U609, channel 7                           | Shared with J600.39 | 
-| 40      | B12      | U609, channel 6                           | Shared with J600.40 |
-| 41      | A13      | U609, channel 5                           | Shared with J600.41 |
-| 42      | C13      | U609, channel 4                           | Shared with J600.42 |
-| 43      | A14      | U609, channel 3                           | Shared with J600.43 |
-| 44      | B14      | U609, channel 2                           | Shared with J600.44 |
-| 45      | C11      | U609, channel 1                           | Shared with J600.45 |
-| 46      | *GND*    |                                           |                     |
-| 47      | E13      | U610, channel 5                           | Shared with J600.47 |
-| 48      | *GND*    |                                           |                     |
-| 49      | *5V*     |                                           |                     |
-| 50      | *GND*    |                                           |                     |
-
-Connector JP4
--------------
-
-| Pin | Connectivity             | Notes                            |
-|-----|--------------------------|----------------------------------|
-| 1   | *GND*                    |                                  |
-| 2   | NC                       |                                  |
-| 3   | FPGA H5, Unbuffered      | Used as serial TX in Migen/Litex |
-| 4   | FPGA G5, Unbuffered      |                                  |
-| 5   | FPGA G6, Unbuffered      | Used as serial RX in Migen/Litex |
-| 6   | FPGA F5, Unbuffered      |                                  |
-| 7   | FPGA F12, U610 channel 0 |                                  |
-| 8   | FPGA F6, U610 channel 0  |                                  |
-| 9   | *5V*                     |                                  |
-| 10  | NV                       |                                  |
 
