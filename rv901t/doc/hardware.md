@@ -54,8 +54,8 @@ Additionaly the DONE and PROG_B pins are available on JP5
 Buffers
 -------
 All I/O Buffers are 5V. 
-Buffers U600 to U607 have a direction pin at F13.
-Buffers U608 to U610 have are hardwired to output.
+  - Buffers U600 to U607 have a direction pin at F13.
+  - Buffers U608 to U610 are hardwired to output.
 
 | F13 | Direction |
 |-----|-----------|
@@ -77,8 +77,9 @@ A 25MHz clock from PHY1 is available at pin M9.
 
 Connector JP4
 -------------
-For Migen/Litex: JP4 Pin3(H5) is used as serial TX
-For Migen/Litex: JP4 Pin5(G6) is used as serial RX 
+For Migen/Litex: 
+  - JP4 Pin3 (H5) is used as serial TX 
+  - JP4 Pin5 (G6) is used as serial RX 
 
 | Shared  | Buffer  | FPGA Pin |JP4 Pin|JP4 Pin| FPGA Pin | Buffer  | Shared |
 |---------|---------|----------|-------|-------|----------|---------|--------|
