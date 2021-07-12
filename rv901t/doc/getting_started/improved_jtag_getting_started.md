@@ -130,6 +130,6 @@ If all went well, the bitstream will load into the device and your green LED wil
 
 Create your own designs!
 
-You can find the pin assignments of the FPGA  [here](https://github.com/q3k/chubby75/blob/master/doc/hardware.md).
+You can find the pin assignments of the FPGA  [here](https://github.com/q3k/chubby75/blob/master/rv901t/doc/hardware.md).
 
 
