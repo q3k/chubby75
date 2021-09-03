@@ -57,7 +57,7 @@ class SDRAMTest(SoCSDRAM):
         sys_clk_freq = int(75e6)
 
         # SoCSDRAM ---------------------------------------------------------------------------------
-        SoCSDRAM.__init__(self, platform, clk_freq=sys_clk_freq, integrated_rom_size=0x6000)
+        SoCSDRAM.__init__(self, platform, cpu_type = "vexriscv", cpu_variant = "minimal", clk_freq = sys_clk_freq, integrated_rom_size = 0x8000)
 
         # CRG --------------------------------------------------------------------------------------
         self.submodules.crg = _CRG(platform, sys_clk_freq)
