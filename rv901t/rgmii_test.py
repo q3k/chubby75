@@ -44,7 +44,8 @@ class RGMIITest(SoCMini):
         # phy
         ethphy = LiteEthPHYRGMII(
             clock_pads = platform.request("eth_clocks", eth_phy),
-            pads       = platform.request("eth", eth_phy))
+            pads       = platform.request("eth", eth_phy),
+            tx_delay   = 0e-9)
         # core
         ethcore = LiteEthUDPIPCore(
             phy         = ethphy,
