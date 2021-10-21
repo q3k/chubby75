@@ -18,6 +18,7 @@ Colorlight 5A-75B
 This is a very interesting card because bitstreams for its Lattice ECP5-25 FPGA can be generated
 entirely with an open source tool chain (Yosys for synthesis, NextPNR for Place & Route, Project
 Trellis for bitstream handling.)
+This board is supported by the visual editor for open FPGA boards [IceStudio](https://icestudio.io/) thanks to [benitoss](https://github.com/benitoss).
 
 You can find information about it [here](./5a-75b/README.md).
 
@@ -27,6 +28,7 @@ Colorlight 5A-75E
 ------------------
 
 This board is almost identical to Colorlight 5A-75B, but has twice as many HUB75 ports.
+This board is supported by the visual editor for open FPGA boards [IceStudio](https://icestudio.io/) thanks to [benitoss](https://github.com/benitoss).
 
 You can find information about it [here](./5a-75e/README.md).
 
