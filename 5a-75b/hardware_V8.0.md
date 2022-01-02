@@ -25,6 +25,15 @@ Definitions
 
 Power
 -----
+The maximum voltage at the 5V input is 5.5V, due to the buck converters used.
+The 5V rail directly feeds only the FPGA power supplies and the 74HC245T output level shifters.
+FPGA power is supplied by 3 buck converters. They are compatible with a TI TLV62565/6 in a SOT23-5 package.
+
+| Buck converter | Vout | Rail | Description               |
+|----------------|------|------|---------------------------|
+| U34            |1.1V  | Vcc  | Core supply voltage       |
+| U37            |1.0V  | Vref | Reference voltage         |
+| U38            |3.3V  | Vccio| I/O Driver supply voltage and 3.3V for the rest of the board |
 
 
 JTAG
@@ -171,6 +180,8 @@ PHYRstB, MDC and MDIO are shared between phy0 and phy1.
 
 HUB75 headers
 -------------
+
+It is possible to replace the 74HC245T output drivers with pin-compatible SN74CBT3245A octal fet bus switches to allow for bidirectional I/O. Note that the output drivers are powered from 5V, so the only protection when using 5V I/O are the resistor packs. ECP5 FPGA does not have 5V tolerant I/O.
 
 Connector J1
 --------------
