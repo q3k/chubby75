@@ -12,6 +12,10 @@ Components
 * 2x Broadcom `B50612D` Gigabit Ethernet PHYs ([datasheet](../5a-75b/datasheets/B50610-DS07-RDS.pdf))
 * 2x ESMT `M12L16161A-5T` 1M x 16bit 200MHz SDRAMs (organized as 1M x 32bit) ([datasheet](../5a-75b/datasheets/M12L16161A.pdf))
 * 23x `74HC245T` Octal Bidirectional Transceivers (used for level translation to 5V)
+* U10, U11, U13, U17 are connected to A, B, C, D, E, CLK, STB, OE for J1 to J8
+* U23, U28, U24, U27, U26, U25 are connected to R0, G0, B0, R1, G1, B1 for J1 to J8 as noted below in tables
+* U23, U28, U24, U27, U26, U25 can be replaced if required with 74LVC245 for inputs, Vcc & DIR will need to be isolated from solder pads
+* and jumpers used for connections
 
 Connections
 ===========
