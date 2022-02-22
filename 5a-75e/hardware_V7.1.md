@@ -169,7 +169,7 @@ Connector J1
 Connector J2
 --------------
 
-| J2 Pin| HUB75 pin | FPGA Pin |
+| J2 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  G4      |
 | 2     | G0        |  G5      |
@@ -192,7 +192,7 @@ Connector J2
 Connector J3
 --------------
 
-| J3 Pin| HUB75 pin | FPGA Pin |
+| J3 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  J4      |
 | 2     | G0        |  K3      |
@@ -215,7 +215,7 @@ Connector J3
 Connector J4
 --------------
 
-| J4 Pin| HUB75 pin | FPGA Pin |
+| J4 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  C1      |
 | 2     | G0        |  A3      |
@@ -238,7 +238,7 @@ Connector J4
 Connector J5
 --------------
 
-| J5 Pin| HUB75 pin | FPGA Pin |
+| J5 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | H4       |
 | 2     | G0        | K5       |
@@ -261,7 +261,7 @@ Connector J5
 Connector J6
 --------------
 
-| J6 Pin| HUB75 pin | FPGA Pin |
+| J6 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | N3       |
 | 2     | G0        | M4       |
@@ -284,7 +284,7 @@ Connector J6
 Connector J7
 --------------
 
-| J7 Pin| HUB75 pin | FPGA Pin |
+| J7 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | P4       |
 | 2     | G0        | R2       |
@@ -307,7 +307,7 @@ Connector J7
 Connector J8
 --------------
 
-| J8 Pin| HUB75 pin | FPGA Pin |
+| J8 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | R8       |
 | 2     | G0        | R7       |
@@ -330,7 +330,7 @@ Connector J8
 Connector J9
 --------------
 
-| J9 Pin| HUB75 pin | FPGA Pin |
+| J9 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | M11      |
 | 2     | G0        | N11      |
@@ -353,7 +353,7 @@ Connector J9
 Connector J10
 --------------
 
-|J10 Pin| HUB75 pin | FPGA Pin |
+|J10 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | T13      |
 | 2     | G0        | N14      |
@@ -376,7 +376,7 @@ Connector J10
 Connector J11
 --------------
 
-|J11 Pin| HUB75 pin | FPGA Pin |
+|J11 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | K16      |
 | 2     | G0        | J15      |
@@ -399,7 +399,7 @@ Connector J11
 Connector J12
 --------------
 
-|J12 Pin| HUB75 pin | FPGA Pin |
+|J12 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        | P15      |
 | 2     | G0        | L12      |
@@ -422,7 +422,7 @@ Connector J12
 Connector J13
 --------------
 
-|J13 Pin| HUB75 pin | FPGA Pin |
+|J13 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  H13     |
 | 2     | G0        |  J13     |
@@ -445,7 +445,7 @@ Connector J13
 Connector J14
 --------------
 
-|J14 Pin| HUB75 pin | FPGA Pin |
+|J14 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  E14     |
 | 2     | G0        |  D16     |
@@ -468,7 +468,7 @@ Connector J14
 Connector J15
 --------------
 
-|J15 Pin| HUB75 pin | FPGA Pin |
+|J15 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  A15     |
 | 2     | G0        |  F16     |
@@ -491,7 +491,7 @@ Connector J15
 Connector J16
 --------------
 
-|J16 Pin| HUB75 pin | FPGA Pin |
+|J16 Pin| HUB75 pin | FPGA Pin | Buffer & Pin
 |-------|-----------|----------|
 | 1     | R0        |  G13     |
 | 2     | G0        |  G12     |
