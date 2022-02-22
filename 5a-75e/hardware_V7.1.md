@@ -148,22 +148,22 @@ Connector J1
 
 | J1 Pin| HUB75 pin | FPGA Pin | Buffer & Pin|
 |-------|-----------|----------|-------------|
-| 1     | R0        |  F3      | U28 Pin 18  |
-| 2     | G0        |  F1      | U28 Pin 17  |
-| 3     | B0        |  G3      | U28 Pin 16  |
-| 4     | *GND*     |  -       |             |
+| 1     | R0        |  F3      | U28 Pin 18
+| 2     | G0        |  F1      | U28 Pin 17
+| 3     | B0        |  G3      | U28 Pin 16
+| 4     | *GND*     |  -       |
 | 5     | R1        |  G2      | U28 Pin 15  |
 | 6     | G1        |  H3      | U28 Pin 14  |
 | 7     | B1        |  H5      | U28 Pin 13  |
-| 8     | E         |  F15     |             |
-| 9     | A         |  L2      |             |
-| 10    | B         |  K1      |             |
-| 11    | C         |  J5      |             |
-| 12    | D         |  K2      |             |
-| 13    | CLK       |  B16     |             |
-| 14    | STB       |  J14     |             |
-| 15    | OE        |  F12     |             |
-| 16    | *GND*     |  -       |             |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
+| 16    | *GND*     |  -       |
 
 
 Connector J2
@@ -178,15 +178,16 @@ Connector J2
 | 5     | R1        |  H2      | U24 Pin 17
 | 6     | G1        |  J1      | U24 Pin 16
 | 7     | B1        |  J3      | U24 Pin 15
-| 8     | E         |  F15     |
-| 9     | A         |  L2      |
-| 10    | B         |  K1      |
-| 11    | C         |  J5      |
-| 12    | D         |  K2      |
-| 13    | CLK       |  B16     |
-| 14    | STB       |  J14     |
-| 15    | OE        |  F12     |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
 | 16    | *GND*     |  -       |
+
 
 
 Connector J3
@@ -201,14 +202,14 @@ Connector J3
 | 5     | R1        |  K4      | U24 Pin 11
 | 6     | G1        |  C2      | U23 Pin 18
 | 7     | B1        |  E3      | U23 Pin 17
-| 8     | E         |  F15     |
-| 9     | A         |  L2      |
-| 10    | B         |  K1      |
-| 11    | C         |  J5      |
-| 12    | D         |  K2      |
-| 13    | CLK       |  B16     |
-| 14    | STB       |  J14     |
-| 15    | OE        |  F12     |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
 | 16    | *GND*     |  -       |
 
 
@@ -224,14 +225,14 @@ Connector J4
 | 5     | R1        |  E1      | U23 Pin 13
 | 6     | G1        |  F5      | U23 Pin 12
 | 7     | B1        |  D1      | U23 Pin 11
-| 8     | E         |  F15     |
-| 9     | A         |  L2      |
-| 10    | B         |  K1      |
-| 11    | C         |  J5      |
-| 12    | D         |  K2      |
-| 13    | CLK       |  B16     |
-| 14    | STB       |  J14     |
-| 15    | OE        |  F12     |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
 | 16    | *GND*     |  -       |
 
 
@@ -247,15 +248,16 @@ Connector J5
 | 5     | R1        | R1       | U27 Pin 15
 | 6     | G1        | L5       | U27 Pin 14
 | 7     | B1        | F2       | U27 Pin 13
-| 8     | E         | F15      |
-| 9     | A         | L2       |
-| 10    | B         | K1       |
-| 11    | C         | J5       |
-| 12    | D         | K2       |
-| 13    | CLK       | B16      |
-| 14    | STB       | J14      |
-| 15    | OE        | F12      |
-| 16    | *GND*     | -        |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
+| 16    | *GND*     |  -       |
+
 
 
 Connector J6
@@ -270,15 +272,15 @@ Connector J6
 | 5     | R1        | R5       | U26 Pin 17
 | 6     | G1        | R3       | U26 Pin 16
 | 7     | B1        | N4       | U26 Pin 15
-| 8     | E         | F15      |
-| 9     | A         | L2       |
-| 10    | B         | K1       |
-| 11    | C         | J5       |
-| 12    | D         | K2       |
-| 13    | CLK       | B16      |
-| 14    | STB       | J14      |
-| 15    | OE        | F12      |
-| 16    | *GND*     | -        |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
+| 16    | *GND*     |  -       |
 
 
 Connector J7
@@ -293,15 +295,16 @@ Connector J7
 | 5     | R1        | M9       | U26 Pin 11
 | 6     | G1        | T6       | U25 Pin 18
 | 7     | B1        | R6       | U25 Pin 17
-| 8     | E         | F15      |
-| 9     | A         | L2       |
-| 10    | B         | K1       |
-| 11    | C         | J5       |
-| 12    | D         | K2       |
-| 13    | CLK       | B16      |
-| 14    | STB       | J14      |
-| 15    | OE        | F12      |
-| 16    | *GND*     | -        |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
+| 16    | *GND*     |  -       |
+
 
 
 Connector J8
@@ -316,15 +319,15 @@ Connector J8
 | 5     | R1        | P7       | U25 Pin 13
 | 6     | G1        | N7       | U25 Pin 12
 | 7     | B1        | M7       | U25 Pin 11
-| 8     | E         | F15      |
-| 9     | A         | L2       |
-| 10    | B         | K1       |
-| 11    | C         | J5       |
-| 12    | D         | K2       |
-| 13    | CLK       | B16      |
-| 14    | STB       | J14      |
-| 15    | OE        | F12      |
-| 16    | *GND*     | -        |
+| 8     | E         |  F15     | U13 or U17
+| 9     | A         |  L2      | U11 or U10
+| 10    | B         |  K1      | U11 or U10
+| 11    | C         |  J5      | U11 or U10
+| 12    | D         |  K2      | U11 or U10
+| 13    | CLK       |  B16     | U13 or U17
+| 14    | STB       |  J14     | U13 or U17
+| 15    | OE        |  F12     | U13 or U17
+| 16    | *GND*     |  -       |
 
 
 Connector J9
