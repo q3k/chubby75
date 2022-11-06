@@ -372,7 +372,7 @@ The RBG bits are unique per connector:
 
 | FPGA Pin  | HUB75 Pin | Function |
 |-----------|-----------|----------|
-| F14       | 1         | R0
+| G14       | 1         | R0
 | G13       | 2         | G0
 | F12       | 3         | B0
 | F13       | 5         | R1
