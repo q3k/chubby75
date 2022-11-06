@@ -1,4 +1,6 @@
-# Colorlight 5A-75E V6.0 Hardware
+# Colorlight 5A-75E V6.0/V8.0 Hardware
+
+Both V6.0 and V8.0 appear to have the same pinout.
 
 * [Front image](images/cl-5a-75e-v60-front.jpg)
 * [Back image](images/cl-5a-75e-v60-back.jpg)
