@@ -4,7 +4,7 @@ The Colorlight 5A-75E is an updated version of 5A-75B with 16 HUB75 ports. It al
 
 There are 2 known versions available on the market at this time:
 
-* V6.0: LFE5U-25F with CABGA256 package. [Detailed info](hardware_V6.0.md).
+* V6.0/V8.0: LFE5U-25F with CABGA256 package. [Detailed info](hardware_V6.0.md).
 * V7.1: LFE5U-25F with CABGA256 package. [Detailed info](hardware_V7.1.md).
 
 The V6.0 board has the following components in addition to the FPGA:
