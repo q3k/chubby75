@@ -201,6 +201,20 @@ For each connector, the address, CLK, STB/LAT, and OE bits are shared:
 | N1        | 14        | STB
 | M4        | 15        | OE
 
+#### LED Transceivers to J* mapping
+
+Transceivers U23,U24,U28 completely cover RGB pins on J1,J2,J3,J4
+
+Transceivers U25,U26,U27 completely cover RGB pins on J5,J6,J7,J8
+
+Transceivers U14,U16,U18 completely cover RGB pins on	J9,J10,J11,J12
+
+Transceivers U9,U12,U15 completely cover RGB pins on J13,J14,J15,J16
+
+Transceivers U10,U11,U13,U17,U19,U20,U21,U22,U30,U38,U39 cover all shared pins
+
+
+
 The RBG bits are unique per connector:
 
 #### LED J1
