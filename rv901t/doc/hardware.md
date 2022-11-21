@@ -14,8 +14,8 @@ Components
    - Various SDRAM vendors such as ESMT and Winbond.
    - [ESMT Datasheet](https://www.esmt.com.tw/upload/pdf/ESMT/datasheets/M12L64322A(2S).pdf)
    - [Winbond Datasheet](https://www.datasheets360.com/pdf/-6219802484225316851)
- - U200: **GigE PHY** Broadcom B50512D, referred to as 'phy0' / 'top'
- - U201: **GigE PHY** Broadcom B50512D, referred to as 'phy1' / 'bottom'
+ - U200: **GigE PHY** Broadcom B50612D, referred to as 'phy0' / 'top'
+ - U201: **GigE PHY** Broadcom B50612D, referred to as 'phy1' / 'bottom'
  - U600-U607: 74HC245 octal bus transceiver, 5V, direction set by FPGA
     - [Datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT245.pdf)
  - U608-U610: 74HC245 octal bus transceiver, 5V, direction hardwired to output
