@@ -31,9 +31,8 @@ Connections
 
 Power
 -----
-The PCB requires a 5V power supply only. You can either use the standard 4-pin
-[disk-drive Molex connector](https://en.wikipedia.org/wiki/Molex_connector#Disk_drive) on J501, or you can use
-the 2 terminals of J500. The top terminal of J500 is 5V, the bottom is GND.
+The PCB requires a positive power supply between 3.3V to 5.5V. You can use the standard 4-pin
+[disk-drive Molex connector](https://en.wikipedia.org/wiki/Molex_connector#Disk_drive) on J501, or you can use the 2 terminals of J500. The top terminal of J500 is the positive supply, the bottom is GND.
 
 
 JTAG
@@ -53,8 +52,8 @@ Additionaly the DONE and PROG_B pins are available on JP5
 
 Buffers
 -------
-All I/O Buffers are 5V. 
-  - Buffers U600 to U607 have a direction pin at F13.
+All I/O Buffers are powered by the 3.3V to 5.5V power supply. 
+  - Buffers U600 to U607 have a direction pin at F13. If want to use for input, then the board should be powered with 3.3V, because the Spartan-6 pins are not 5V-tolerant.
   - Buffers U608 to U610 are hardwired to output.
 
 | F13 | Direction |
