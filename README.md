@@ -47,7 +47,7 @@ As it contains a user-reprogrammable Spartan 6 FPGA (LX16, 14k 'logic cells', 91
 potential to be usable as a general purpose FPGA development board, an interface card for various purposes, 
 or a logic analyzer.
 
-RV908 - No Supported
+RV908 - Not Supported
 --------------------
 
 There are RV908 boards which are an RV901T with the HUB75 daughter board integrated.
