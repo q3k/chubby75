@@ -58,7 +58,7 @@ Status
 Acknowledgments
 ---------------
 
-Thanks to Niklas Fauth and Jan Henrik for donating two boards and partially tracing out the PHYs, and delayering the PCB.
+Thanks to Lucy Fauth and Jana Marie Hemsing for donating two boards and partially tracing out the PHYs, and delayering the PCB.
 
 Thanks to carrotIndustries for assisting with the preliminary RE process at Glühweinprogrammiernacht 2018.
 
