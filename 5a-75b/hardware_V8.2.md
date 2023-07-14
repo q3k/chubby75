@@ -1,4 +1,4 @@
-# Colorlight 5A-75B V8.0 Hardware
+# Colorlight 5A-75B V8.2 Hardware
 
 ## Components
 
