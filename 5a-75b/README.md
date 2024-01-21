@@ -12,6 +12,7 @@ There are 3 known versions on available on the market at this time:
 * V6.1: LFE5U-25F with CABGA381 package. [Detailed info](hardware_V6.1.md).
 * V7.0: LFE5U-25F with CABGA256 package. [Detailed info](hardware_V7.0.md).
 * V8.0: LFE5U-25F with CABGA256 package. [Detailed info](hardware_V8.0.md).
+* V8.2: LFE5U-25F with CABGA256 package. [Detailed info](hardware_V8.2.md).
 
 They're more or less identical in terms of peripheral components, but the connections to the FPGA pins are obviously different.
 
