@@ -1,0 +1,5 @@
+
+LOCATE COMP "osc_clk25"         SITE "P6";
+LOCATE COMP "led"               SITE "P11";
+LOCATE COMP "button"            SITE "M13";
+LOCATE COMP "phy_rst_"          SITE "P5";
