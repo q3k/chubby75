@@ -163,14 +163,14 @@ Connector J1
 | 5     | R1        |  G2      | U28 Pin 15  |
 | 6     | G1        |  H3      | U28 Pin 14  |
 | 7     | B1        |  H5      | U28 Pin 13  |
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U13 Pin 16 (Shared with J2 pin 8)
+| 9     | A         |  L2      | U10 Pin 16 (Shared with J2 pin 9)
+| 10    | B         |  K1      | U10 Pin 18 (Shared with J2 pin 10)
+| 11    | C         |  J5      | U10 Pin 12 (Shared with J2 pin 11)
+| 12    | D         |  K2      | U10 Pin 14 (Shared with J2 pin 12)
+| 13    | CLK       |  B16     | U39 Pin 14
+| 14    | STB       |  J14     | U39 Pin 18
+| 15    | OE        |  F12     | U39 Pin 12
 | 16    | *GND*     |  -       |
 
 
@@ -185,14 +185,14 @@ Connector J2
 | 5     | R1        |  H2      | U24 Pin 17
 | 6     | G1        |  J1      | U24 Pin 16
 | 7     | B1        |  J3      | U24 Pin 15
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U13 Pin 16 (Shared with J1 pin 8)
+| 9     | A         |  L2      | U10 Pin 16 (Shared with J1 pin 9)
+| 10    | B         |  K1      | U10 Pin 18 (Shared with J1 pin 10)
+| 11    | C         |  J5      | U10 Pin 12 (Shared with J1 pin 11)
+| 12    | D         |  K2      | U10 Pin 14 (Shared with J1 pin 12)
+| 13    | CLK       |  B16     | U39 Pin 13
+| 14    | STB       |  J14     | U39 Pin 17
+| 15    | OE        |  F12     | U39 Pin 11
 | 16    | *GND*     |  -       |
 
 
@@ -208,14 +208,14 @@ Connector J3
 | 5     | R1        |  K4      | U24 Pin 11
 | 6     | G1        |  C2      | U23 Pin 18
 | 7     | B1        |  E3      | U23 Pin 17
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U13 Pin 15 (Shared with J4 pin 8)
+| 9     | A         |  L2      | U10 Pin 15 (Shared with J4 pin 9)
+| 10    | B         |  K1      | U10 Pin 18 (Shared with J4 pin 10)
+| 11    | C         |  J5      | U10 Pin 11 (Shared with J4 pin 11)
+| 12    | D         |  K2      | U10 Pin 13 (Shared with J4 pin 12)
+| 13    | CLK       |  B16     | U30 Pin 14
+| 14    | STB       |  J14     | U30 Pin 18
+| 15    | OE        |  F12     | U30 Pin 12
 | 16    | *GND*     |  -       |
 
 
@@ -230,14 +230,14 @@ Connector J4
 | 5     | R1        |  E1      | U23 Pin 13
 | 6     | G1        |  F5      | U23 Pin 12
 | 7     | B1        |  D1      | U23 Pin 11
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U13 Pin 15 (Shared with J3 pin 8)
+| 9     | A         |  L2      | U10 Pin 15 (Shared with J3 pin 9)
+| 10    | B         |  K1      | U10 Pin 18 (Shared with J3 pin 10)
+| 11    | C         |  J5      | U10 Pin 11 (Shared with J3 pin 11)
+| 12    | D         |  K2      | U10 Pin 13 (Shared with J3 pin 12)
+| 13    | CLK       |  B16     | U30 Pin 13
+| 14    | STB       |  J14     | U30 Pin 18
+| 15    | OE        |  F12     | U30 Pin 11
 | 16    | *GND*     |  -       |
 
 
@@ -252,14 +252,14 @@ Connector J5
 | 5     | R1        | R1       | U27 Pin 15
 | 6     | G1        | L5       | U27 Pin 14
 | 7     | B1        | F2       | U27 Pin 13
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U17 Pin 16 (Shared with J6 pin 8)
+| 9     | A         |  L2      | U11 Pin 16 (Shared with J6 pin 9)
+| 10    | B         |  K1      | U11 Pin 18 (Shared with J6 pin 10)
+| 11    | C         |  J5      | U11 Pin 12 (Shared with J6 pin 11)
+| 12    | D         |  K2      | U11 Pin 14 (Shared with J6 pin 12)
+| 13    | CLK       |  B16     | U17 Pin 14
+| 14    | STB       |  J14     | U17 Pin 18
+| 15    | OE        |  F12     | U17 Pin 12
 | 16    | *GND*     |  -       |
 
 
@@ -274,14 +274,14 @@ Connector J6
 | 5     | R1        | R5       | U26 Pin 17
 | 6     | G1        | R3       | U26 Pin 16
 | 7     | B1        | N4       | U26 Pin 15
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U17 Pin 16 (Shared with J5 pin 8)
+| 9     | A         |  L2      | U11 Pin 16 (Shared with J5 pin 9)
+| 10    | B         |  K1      | U11 Pin 18 (Shared with J5 pin 10)
+| 11    | C         |  J5      | U11 Pin 12 (Shared with J5 pin 11)
+| 12    | D         |  K2      | U11 Pin 14 (Shared with J5 pin 12)
+| 13    | CLK       |  B16     | U17 Pin 13
+| 14    | STB       |  J14     | U17 Pin 17
+| 15    | OE        |  F12     | U17 Pin 11
 | 16    | *GND*     |  -       |
 
 
@@ -296,14 +296,14 @@ Connector J7
 | 5     | R1        | M9       | U26 Pin 11
 | 6     | G1        | T6       | U25 Pin 18
 | 7     | B1        | R6       | U25 Pin 17
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U17 Pin 15 (Shared with J8 pin 8)
+| 9     | A         |  L2      | U11 Pin 15 (Shared with J8 pin 9)
+| 10    | B         |  K1      | U11 Pin 17 (Shared with J8 pin 10)
+| 11    | C         |  J5      | U11 Pin 17 (Shared with J8 pin 11)
+| 12    | D         |  K2      | U11 Pin 13 (Shared with J8 pin 12)
+| 13    | CLK       |  B16     | U13 Pin 14
+| 14    | STB       |  J14     | U13 Pin 18
+| 15    | OE        |  F12     | U13 Pin 12
 | 16    | *GND*     |  -       |
 
 
@@ -319,14 +319,14 @@ Connector J8
 | 5     | R1        | P7       | U25 Pin 13
 | 6     | G1        | N7       | U25 Pin 12
 | 7     | B1        | M7       | U25 Pin 11
-| 8     | E         |  F15     | U13 or U17
-| 9     | A         |  L2      | U11 or U10
-| 10    | B         |  K1      | U11 or U10
-| 11    | C         |  J5      | U11 or U10
-| 12    | D         |  K2      | U11 or U10
-| 13    | CLK       |  B16     | U13 or U17
-| 14    | STB       |  J14     | U13 or U17
-| 15    | OE        |  F12     | U13 or U17
+| 8     | E         |  F15     | U17 Pin 15 (Shared with J7 pin 8)
+| 9     | A         |  L2      | U11 Pin 15 (Shared with J7 pin 9)
+| 10    | B         |  K1      | U11 Pin 17 (Shared with J7 pin 10)
+| 11    | C         |  J5      | U11 Pin 17 (Shared with J7 pin 11)
+| 12    | D         |  K2      | U11 Pin 13 (Shared with J7 pin 12)
+| 13    | CLK       |  B16     | U13 Pin 13
+| 14    | STB       |  J14     | U13 Pin 17
+| 15    | OE        |  F12     | U13 Pin 11
 | 16    | *GND*     |  -       |
 
 
@@ -341,14 +341,14 @@ Connector J9
 | 5     | R1        | K15      | U18 Pin 14
 | 6     | G1        | N12      | U18 Pin 15
 | 7     | B1        | L16      | U18 Pin 13
-| 8     | E         | F15      | U19 or U20
-| 9     | A         | L2       | U21 or U22
-| 10    | B         | K1       | U21 OR U22
-| 11    | C         | J5       | U21 or U22
-| 12    | D         | K2       | U21 or U22
-| 13    | CLK       | B16      | U19 0R U20
-| 14    | STB       | J14      | U19 or U20
-| 15    | OE        | F12      | U19 or U20
+| 8     | E         | F15      | U19 Pin 16 (Shared with J10 pin 8)
+| 9     | A         | L2       | U21 Pin 18 (Shared with J10 pin 9)
+| 10    | B         | K1       | U21 Pin 16 (Shared with J10 pin 10)
+| 11    | C         | J5       | U21 Pin 14 (Shared with J10 pin 11)
+| 12    | D         | K2       | U21 Pin 12 (Shared with J10 pin 12)
+| 13    | CLK       | B16      | U19 Pin 18
+| 14    | STB       | J14      | U19 Pin 14
+| 15    | OE        | F12      | U19 Pin 12
 | 16    | *GND*     | -        |
 
 
@@ -363,14 +363,14 @@ Connector J10
 | 5     | R1        | P16      | U16 Pin 16
 | 6     | G1        | T15      | U16 Pin 17
 | 7     | B1        | L14      | U16 Pin 15
-| 8     | E         | F15      | U19 or U20
-| 9     | A         | L2       | U21 or U22
-| 10    | B         | K1       | U21 OR U22
-| 11    | C         | J5       | U21 or U22
-| 12    | D         | K2       | U21 or U22
-| 13    | CLK       | B16      | U19 0R U20
-| 14    | STB       | J14      | U19 or U20
-| 15    | OE        | F12      | U19 or U20
+| 8     | E         | F15      | U19 Pin 16 (Shared with J9 pin 8)
+| 9     | A         | L2       | U21 Pin 18 (Shared with J9 pin 9)
+| 10    | B         | K1       | U21 Pin 16 (Shared with J9 pin 10)
+| 11    | C         | J5       | U21 Pin 14 (Shared with J9 pin 11)
+| 12    | D         | K2       | U21 Pin 12 (Shared with J9 pin 12)
+| 13    | CLK       | B16      | U19 Pin 17
+| 14    | STB       | J14      | U19 Pin 14
+| 15    | OE        | F12      | U19 Pin 11
 | 16    | *GND*     | -        |
 
 
@@ -384,15 +384,15 @@ Connector J11
 | 4     | *GND*     | -        |
 | 5     | R1        | J12      | U14 Pin 18
 | 6     | G1        | H15      | U16 Pin 11
-| 7     | B1        | G16      |
-| 8     | E         | F15      | U19 or U20
-| 9     | A         | L2       | U21 or U22
-| 10    | B         | K1       | U21 OR U22
-| 11    | C         | J5       | U21 or U22
-| 12    | D         | K2       | U21 or U22
-| 13    | CLK       | B16      | U19 0R U20
-| 14    | STB       | J14      | U19 or U20
-| 15    | OE        | F12      | U19 or U20
+| 7     | B1        | G16      | U14 Pin 17
+| 8     | E         | F15      | U19 Pin 15 (Shared with J12 pin 8)
+| 9     | A         | L2       | U21 Pin 17 (Shared with J12 pin 9)
+| 10    | B         | K1       | U21 Pin 15 (Shared with J12 pin 10)
+| 11    | C         | J5       | U21 Pin 13 (Shared with J12 pin 11)
+| 12    | D         | K2       | U21 Pin 11 (Shared with J12 pin 12)
+| 13    | CLK       | B16      | U20 Pin 18
+| 14    | STB       | J14      | U20 Pin 14
+| 15    | OE        | F12      | U20 Pin 12
 | 16    | *GND*     | -        |
 
 
@@ -407,14 +407,14 @@ Connector J12
 | 5     | R1        | D14      | U14 Pin 12
 | 6     | G1        | R16      | U14 Pin 13
 | 7     | B1        | E16      | U14 Pin 11
-| 8     | E         | F15      | U19 or U20
-| 9     | A         | L2       | U21 or U22
-| 10    | B         | K1       | U21 OR U22
-| 11    | C         | J5       | U21 or U22
-| 12    | D         | K2       | U21 or U22
-| 13    | CLK       | B16      | U19 0R U20
-| 14    | STB       | J14      | U19 or U20
-| 15    | OE        | F12      | U19 or U20
+| 8     | E         | F15      | U19 Pin 15 (Shared with J11 pin 8)
+| 9     | A         | L2       | U21 Pin 17 (Shared with J11 pin 9)
+| 10    | B         | K1       | U21 Pin 15 (Shared with J11 pin 10)
+| 11    | C         | J5       | U21 Pin 13 (Shared with J11 pin 11)
+| 12    | D         | K2       | U21 Pin 11 (Shared with J11 pin 12)
+| 13    | CLK       | B16      | U20 Pin 17
+| 14    | STB       | J14      | U20 Pin 13
+| 15    | OE        | F12      | U20 Pin 11
 | 16    | *GND*     | -        |
 
 
@@ -429,14 +429,14 @@ Connector J13
 | 5     | R1        |  G14     | U09 Pin 14
 | 6     | G1        |  H14     | U09 Pin 15
 | 7     | B1        |  G15     | U09 Pin 13
-| 8     | E         |  F15     | U19 or U20
-| 9     | A         |  L2      | U21 or U22
-| 10    | B         |  K1      | U21 OR U22
-| 11    | C         |  J5      | U21 or U22
-| 12    | D         |  K2      | U21 or U22
-| 13    | CLK       |  B16     | U19 0R U20
-| 14    | STB       |  J14     | U19 or U20
-| 15    | OE        |  F12     | U19 or U20
+| 8     | E         |  F15     | U20 Pin 16 (Shared with J14 pin 8)
+| 9     | A         |  L2      | U22 Pin 18 (Shared with J14 pin 9)
+| 10    | B         |  K1      | U22 Pin 16 (Shared with J14 pin 10)
+| 11    | C         |  J5      | U22 Pin 14 (Shared with J14 pin 11)
+| 12    | D         |  K2      | U22 Pin 12 (Shared with J14 pin 12)
+| 13    | CLK       |  B16     | U38 Pin 18
+| 14    | STB       |  J14     | U38 Pin 14
+| 15    | OE        |  F12     | U38 Pin 12
 | 16    | *GND*     |  -       |
 
 
@@ -451,14 +451,14 @@ Connector J14
 | 5     | R1        |  B15     | U12 Pin 16
 | 6     | G1        |  C16     | U12 Pin 17
 | 7     | B1        |  C14     | U12 Pin 15
-| 8     | E         |  F15     | U19 or U20
-| 9     | A         |  L2      | U21 or U22
-| 10    | B         |  K1      | U21 OR U22
-| 11    | C         |  J5      | U21 or U22
-| 12    | D         |  K2      | U21 or U22
-| 13    | CLK       |  B16     | U19 0R U20
-| 14    | STB       |  J14     | U19 or U20
-| 15    | OE        |  F12     | U19 or U20
+| 8     | E         |  F15     | U20 Pin 16 (Shared with J13 pin 8)
+| 9     | A         |  L2      | U22 Pin 18 (Shared with J13 pin 9)
+| 10    | B         |  K1      | U22 Pin 16 (Shared with J13 pin 10)
+| 11    | C         |  J5      | U22 Pin 14 (Shared with J13 pin 11)
+| 12    | D         |  K2      | U22 Pin 12 (Shared with J13 pin 12)
+| 13    | CLK       |  B16     | U38 Pin 17 
+| 14    | STB       |  J14     | U38 Pin 14
+| 15    | OE        |  F12     | U38 Pin 11
 | 16    | *GND*     |  -       |
 
 
@@ -473,14 +473,14 @@ Connector J15
 | 5     | R1        |  E13     | U15 Pin 18
 | 6     | G1        |  B14     | U12 Pin 11
 | 7     | B1        |  A13     | U15 Pin 17
-| 8     | E         |  F15     | U19 or U20
-| 9     | A         |  L2      | U21 or U22
-| 10    | B         |  K1      | U21 OR U22
-| 11    | C         |  J5      | U21 or U22
-| 12    | D         |  K2      | U21 or U22
-| 13    | CLK       |  B16     | U19 0R U20
-| 14    | STB       |  J14     | U19 or U20
-| 15    | OE        |  F12     | U19 or U20
+| 8     | E         |  F15     | U20 Pin 15 (Shared with J16 pin 8)
+| 9     | A         |  L2      | U22 Pin 17 (Shared with J16 pin 9)
+| 10    | B         |  K1      | U22 Pin 15 (Shared with J16 pin 10)
+| 11    | C         |  J5      | U22 Pin 13 (Shared with J16 pin 11)
+| 12    | D         |  K2      | U22 Pin 11 (Shared with J16 pin 12)
+| 13    | CLK       |  B16     | U30 Pin 15
+| 14    | STB       |  J14     | U39 Pin 15
+| 15    | OE        |  F12     | U38 Pin 16
 | 16    | *GND*     |  -       |
 
 
@@ -495,12 +495,12 @@ Connector J16
 | 5     | R1        |  F14     | U15 Pin 12
 | 6     | G1        |  F13     | U15 Pin 13
 | 7     | B1        |  C13     | U15 Pin 11
-| 8     | E         |  F15     | U19 or U20
-| 9     | A         |  L2      | U21 or U22
-| 10    | B         |  K1      | U21 OR U22
-| 11    | C         |  J5      | U21 or U22
-| 12    | D         |  K2      | U21 or U22
-| 13    | CLK       |  B16     | U19 0R U20
-| 14    | STB       |  J14     | U19 or U20
-| 15    | OE        |  F12     | U19 or U20
+| 8     | E         |  F15     | U20 Pin 15 (Shared with J15 pin 8)
+| 9     | A         |  L2      | U22 Pin 17 (Shared with J15 pin 9)
+| 10    | B         |  K1      | U22 Pin 15 (Shared with J15 pin 10)
+| 11    | C         |  J5      | U22 Pin 13 (Shared with J15 pin 11)
+| 12    | D         |  K2      | U22 Pin 11 (Shared with J15 pin 12)
+| 13    | CLK       |  B16     | U30 Pin 16
+| 14    | STB       |  J14     | U39 Pin 16
+| 15    | OE        |  F12     | U38 Pin 15
 | 16    | *GND*     |  -       |
