@@ -52,6 +52,24 @@ JTAG is available on a 4-pin header next to the FPGA (U33). VCC/GND are availabl
 | J34 | *GND*    |
 
 
+FPGA configuration controls
+---------------------------
+
+ECP5 sysCONFIG signals are "broken out" to resistors near the FPGA and the JTAG
+connector, like so:
+
+![sysCONFIG pins](images/cl-5a-75b-v80-sysconfig.jpg)
+
+| Resistor | Signal   | Pin |
+|----------|----------|-----|
+| R106     | PROGRAMN | R9  |
+| R83      | CFG_1    | P10 |
+| R105     | INITN    | T9  |
+| R102     | DONE     | P9  |
+
+All these signals are pulled up by their respective resistors to the 3v3 rail.
+
+
 SPI Flash (U31)
 ---------------
 
@@ -62,7 +80,7 @@ SPI Flash (U31)
 | 3         | _na_     | WP#      | Wired to 3v3
 | 4         | _na_     | GND      |
 | 5         | T8       | SI       |
-| 6         | FIXME    | SCK      |
+| 6         | N9       | SCK      | CCLK/MCLK pin, through sysCONFIG USRMCLK primitive (with USRMCLKTS=0)
 | 7         | _na_     | Hold#    | Wired to 3v3
 | 8         | _na_     | VCC      | Wired to 3v3
 
@@ -85,7 +103,9 @@ There is a general purpose, FPGA controlled LED (DATA_LED-) at T6, active low (F
 
 Additionally, there is a button (R7, KEY+).
 
-PAD N16 -> unpopulated R26
+Pad N16 is connected to R26 (unpopulated).
+
+On the bottom side of the PCB, one can find resistors R107 and R109. These are connected to FPGA pads D12 and A12, respectively.
 
 
 SDRAM U29
