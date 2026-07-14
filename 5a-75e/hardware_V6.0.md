@@ -215,9 +215,13 @@ Transceivers U9,U12,U15 completely cover RGB pins on J13,J14,J15,J16
 
 Transceivers U10,U11,U13,U17,U19,U20,U21,U22,U30,U38,U39 cover all shared pins
 
+Address pins (A, B, C, D, E) of a pair of HUB75 connectors are shared and wired to the same transceiver. 5 address lines * 16 HUB75 connectors / 2 = 40 address lines.
 
+Control pins (CLK, STB, OE) of a pair of HUB75 connectors are not shared and wired to different transceivers. 3 control lines * 16 HUB75 connectors = 48 control lines.
 
-The RBG bits are unique per connector:
+That makes 88 pins in total, which is exactly the number of pins on the 74HC245 transceivers (8 pins * 11 transceivers = 88 pins).
+
+The RBG bits are unique per connector.
 
 #### LED J1
 
